@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2");
+  src: url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2");
+  src: url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.body {
+  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.wrap {
+  padding: 0 20px;
+}
+
+.header {
+  width: 100%;
+}
+.header .header__main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header .logo__link {
+  display: block;
+  text-decoration: none;
+}
+.header .logo__image {
+  margin-top: 10px;
+}
+.header .logo__text {
+  margin-left: 53px;
+  margin-bottom: 7px;
+}
+
+.burger__open {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.burger__line {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #000000;
+  margin-top: 38px;
+}
+.burger__line::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #000000;
+  top: -16px;
+  left: 0;
+}
+.burger__line::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #000000;
+  top: -8px;
+  left: 0;
+}
+
+.nav__list {
+  display: none;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  background: #ffffff;
+}
+.nav__list .nav__list--open {
+  display: flex;
+}
+.nav__list .nav__item {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+.nav__list .nav__item:last-child {
+  border-bottom: 1px solid #e6e6e6;
+}
+.nav__list .nav__link {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  display: block;
+  padding: 22px 0;
+}
+
+.block-header {
+  background: url("../img/mobile/bg_mobile.jpg") no-repeat center top;
+}
+.block-header .title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  margin: 13px;
+  padding: 27px 0 12px;
+}
+.block-header .slogan {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  display: block;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+.block-header .slogan::after {
+  content: "";
+  display: block;
+  background: url("../img/mobile/promo-mobile.png");
+  width: 280px;
+  height: 270px;
+  margin-left: 20px;
+  margin-top: 32px;
+}
+
+.btn {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  background: #68b738;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  padding: 10px;
+}
+
+.program__item {
+  position: relative;
+  background: #f2f2f2;
+}
+.program__item .program-image {
+  position: absolute;
+  background: #68b738;
+  width: 50px;
+  height: 53px;
+  border-radius: 50px;
+  top: 22px;
+  left: 22px;
+}
+.program__item .program-image .program-image-cat {
+  margin-left: 7px;
+}
+.program__item .program-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+.program__item .program-description {
+  padding: 5px 20px 4px 20px;
+}
+.program__item .program-description::after {
+  content: "";
+  width: 240px;
+  height: 1px;
+  background: #d9d9d9;
+  display: block;
+  margin-top: 22px;
+}
+.program__item .program-link {
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding: 0 0 0 20px;
+}
+.program__item .program-link::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -47px;
+  background: url("../img/mobile/icon_arrow.svg") no-repeat;
+  width: 32px;
+  height: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
