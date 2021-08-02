@@ -63,8 +63,9 @@
     padding: 22px 0;
   }
 }
-.header__nav{
-  &:hover .nav__list{
+
+.header__nav {
+  &:hover .nav__list {
     display: flex;
   }
 }
