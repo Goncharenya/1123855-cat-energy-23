@@ -13,7 +13,6 @@
 }
 
 .process__one {
-
   &::before {
     content: "";
     display: block;
@@ -27,7 +26,6 @@
 }
 
 .process__two {
-
   &::before {
     content: "";
     display: block;
@@ -41,7 +39,6 @@
 }
 
 .process__three {
-
   &::before {
     content: "";
     display: block;
@@ -55,7 +52,6 @@
 }
 
 .process__four {
-
   &::before {
     content: "";
     display: block;
@@ -68,12 +64,9 @@
   }
 }
 
-
 .process__description {
   width: 70%;
   padding: 0 0 10px 20px;
   margin: 0;
   color: $special_dark-grey;
 }
-
-
