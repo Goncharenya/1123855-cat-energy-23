@@ -51,12 +51,13 @@
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
-    padding: 0 0 0 20px;
+    padding: 0 0 20px 20px;
+    display: inline-block;
 
     &::after {
       content: "";
       position: absolute;
-      top: 6px;
+      top: 3px;
       right: -47px;
       background: url("../img/mobile/icon_arrow.svg") no-repeat;
       width: 32px;
