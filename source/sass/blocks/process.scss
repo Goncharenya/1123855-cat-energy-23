@@ -1,0 +1,72 @@
+@import "../sass/name.scss";
+
+.process__title {
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: none;
+  margin-bottom: 37px;
+}
+
+.process__item {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.process__one {
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $basic_green;
+    background-image: url("../img/icon/icon_leaf.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.process__two {
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $basic_green;
+    background-image: url("../img/icon/icon_tub.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.process__three {
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $basic_green;
+    background-image: url("../img/icon/icon_eat.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.process__four {
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $basic_green;
+    background-image: url("../img/icon/icon_alarm.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.process__description {
+  width: 70%;
+  padding: 0 0 10px 20px;
+  margin: 0;
+  color: $special_dark-grey;
+}
