@@ -1,67 +1,78 @@
-@import "../sass/name.scss";
-
 .program__item {
+  background: $basic-grey;
+}
+
+.program__image {
+  background: $basic-green;
+  width: 50px;
+  height: 53px;
+  border-radius: 50px;
+  //margin: 22px 0 0 22px;
+}
+
+.program__slim {
+  &::after {
+    content: "";
+    display: block;
+    background: url("../../img/mobile/cat-slim.svg") no-repeat;
+    width: 60px;
+    height: 50px;
+  }
+}
+
+.program__pro {
+  &::after {
+    content: "";
+    display: block;
+    background: url("../../img/mobile/cat-pro.svg") no-repeat center;
+    width: 70px;
+    height: 50px;
+  }
+}
+
+.program__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+
+.program__description {
+  padding: 5px 20px 4px 20px;
+
+  &::after {
+    content: "";
+    width: 240px;
+    height: 1px;
+    background: #d9d9d9;
+    display: block;
+    margin-top: 22px;
+  }
+}
+
+.program__link {
   position: relative;
-  background: $basic_grey;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding: 0 0 20px 20px;
+  display: inline-block;
 
-  .program-image {
+  &::after {
+    content: "";
     position: absolute;
-    background: $basic_green;
-    width: 50px;
-    height: 53px;
-    border-radius: 50px;
-    top: 22px;
-    left: 22px;
-
-    .program-image-cat {
-      margin-left: 7px;
-    }
-  }
-
-  .program-title {
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 37px;
-    text-transform: uppercase;
-    color: #000000;
-    text-align: center;
-    padding: 30px 0 0 0;
-  }
-
-  .program-description {
-    padding: 5px 20px 4px 20px;
-
-    &::after {
-      content: "";
-      width: 240px;
-      height: 1px;
-      background: #d9d9d9;
-      display: block;
-      margin-top: 22px;
-    }
-  }
-
-  .program-link {
-    position: relative;
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    padding: 0 0 20px 20px;
-    display: inline-block;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 3px;
-      right: -47px;
-      background: url("../img/mobile/icon_arrow.svg") no-repeat;
-      width: 32px;
-      height: 10px;
-    }
+    top: 3px;
+    right: -47px;
+    background: url("../../img/mobile/icon_arrow.svg") no-repeat;
+    width: 32px;
+    height: 10px;
   }
 }

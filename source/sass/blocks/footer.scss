@@ -1,9 +1,7 @@
-@import "../sass/name.scss";
-
 .footer {
-  background: $basic_grey;
+  background: $basic-grey;
 }
 
 .footer__item-contact {
-  background: #ffffff;
+  display: flex;
 }

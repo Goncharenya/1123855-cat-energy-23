@@ -1,3 +1,34 @@
+@import "blocks/var.scss";
+@import "blocks/body.scss";
+@import "blocks/btn.scss";
+@import "blocks/wrap.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/burger.scss";
+@import "blocks/nav.scss";
+@import "blocks/header-promo.scss";
+@import "blocks/title-section.scss";
+@import "blocks/process.scss";
+@import "blocks/program.scss";
+@import "blocks/example.scss";
+@import "blocks/specification.scss";
+@import "blocks/social.scss";
+@import "blocks/footer.scss";
+@import "blocks/link-classic.scss";
+//catalog
+@import "blocks/main.scss";
+@import "blocks/catalog.scss";
+@import "blocks/title.scss";
+@import "blocks/cards.scss";
+@import "blocks/additional.scss";
+@import "blocks/product.scss";
+@import "blocks/gift.scss";
+@import "blocks/visually-hidden.scss";
+//form
+@import "blocks/main-program.scss";
+@import "blocks/form.scss";
+
+
 // Начните писать стили здесь
 @font-face {
   font-family: "Oswald";
@@ -14,21 +45,3 @@
   font-weight: 500;
   font-style: normal;
 }
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-.link-classic {
-  text-decoration: none;
-  color: #000000;
-}
-
-.wrap {
-  padding: 0 20px;
-}
-@import "blocks/body.scss";

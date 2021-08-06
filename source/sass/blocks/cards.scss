@@ -1,0 +1,14 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cards__description {
+  font-size: 12px;
+  line-height: 16px;
+}
