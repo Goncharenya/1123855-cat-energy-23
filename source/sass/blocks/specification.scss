@@ -1,0 +1,35 @@
+.specification {
+  display: flex;
+  justify-content: center;
+}
+
+.specification__num,
+.specification__day {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #000000;
+}
+
+.specification__num-value {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.specification__expenses {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}

@@ -1,0 +1,31 @@
+.form {
+  text-transform: uppercase;
+}
+
+.form__item-user {
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: flex-end;
+}
+
+.form__box {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: none;
+
+  &:nth-child(2) {
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+.form__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
