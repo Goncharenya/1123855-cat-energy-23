@@ -1,9 +1,59 @@
+.nav__burger-open {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    left: -200px;
+  }
+
+  @media (min-width: $tablet-with) {
+    display: none;
+  }
+}
+
+.nav__burger-line {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #000000;
+  margin-top: 38px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: #000000;
+    top: -16px;
+    left: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: #000000;
+    top: -8px;
+    left: 0;
+  }
+}
+
 .nav__list {
   display: none;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  width: 320px;
+  width: 100%;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -11,6 +61,18 @@
   top: 65px;
   left: 0;
   background: #ffffff;
+
+  @media (min-width: $desktop-with) {
+    background: none;
+    color: #ffffff;
+  }
+
+  @media (min-width: $tablet-with) {
+    display: flex;
+    flex-flow: row;
+    position: static;
+    min-width: 480px;
+  }
 }
 
 .nav__list--open {
@@ -21,9 +83,25 @@
   width: 100%;
   text-align: center;
   border-top: 1px solid #e6e6e6;
+  position: relative;
+  padding: 22px 0;
 
   &:last-child {
     border-bottom: 1px solid #e6e6e6;
+
+    @media (min-width: $tablet-with) {
+      border: none;
+    }
+  }
+
+  @media (min-width: $tablet-with) {
+    border: none;
+  }
+
+  &:nth-child(2) {
+    @media (min-width: $tablet-with) {
+      margin-right: 20px;
+    }
   }
 }
 
@@ -35,8 +113,23 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
-  display: block;
-  padding: 22px 0;
+  //display: block;
+
+
+  @media (min-width: $tablet-with) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  @media (min-width: $desktop-with) {
+    background: none;
+    color: #ffffff;
+  }
+}
+
+.nav__link--active {
+  border-bottom: 2px solid $basic-green;
 }
 
 .nav {

@@ -4,4 +4,132 @@
 
 .footer__item-contact {
   display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-with) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-with) {
+    position: absolute;
+    background: #ffffff;
+    padding: 30px;
+    left: 110px;
+    margin-top: 95px;
+  }
+}
+
+.footer__item-contact-main {
+  background: #ffffff;
+}
+
+.footer__vacancy p {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+
+  @media (min-width: $tablet-with) {
+    width: 171px;
+  }
+}
+
+.footer__contact p {
+  line-height: 20px;
+  color: $special-dark-grey;
+  text-align: right;
+
+  @media (min-width: $tablet-with) {
+    width: 171px;
+  }
+}
+
+.footer__logo {
+  padding: 30px 0;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-with) {
+    width: 30%;
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet-with) {
+  .footer__part {
+    width: 30%;
+  }
+}
+
+.footer__item-social {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+
+  @media (min-width: $tablet-with) {
+    flex-flow: row;
+    align-items: center;
+  }
+}
+
+.social__list {
+  display: flex;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+  width: 100%;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-with) {
+    border: none;
+    width: 30%;
+  }
+}
+
+.social__item {
+  padding: 15px 0;
+  display: block;
+
+  &:nth-child(2) {
+    margin: 0 30px;
+  }
+}
+
+.footer__logo-academy {
+  padding: 20px 0 20px 0;
+  width: 100%;
+
+  @media (min-width: $tablet-with) {
+    width: 30%;
+  }
+}
+
+.footer__logo-svg {
+  fill: $special-dark-grey;
+  width: 27px;
+  height: 34px;
+}
+
+.footer__link-logo-academy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $special-dark-grey;
+  //min-width: 280px;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-with) {
+    min-width: 30%;
+    justify-content: flex-end;
+  }
+
+  span,
+  img {
+    display: block;
+  }
 }

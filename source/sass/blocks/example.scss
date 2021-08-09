@@ -4,4 +4,78 @@
 
 .example__title {
   text-transform: none;
+  text-align: left;
+
+  @media (min-width: $tablet-with) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.example__item {
+  padding-bottom: 30px;
+}
+
+.example__image {
+  display: none;
+  text-align: center;
+}
+
+.example__visible-cat {
+  display: block;
+}
+
+.example__before,
+.example__after {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.example__progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example__progress-bar {
+  position: relative;
+  width: 26%;
+  height: 14px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background: #ffffff;
+  margin: 0 13px;
+
+  @media (min-width: $tablet-with) {
+    background: #cdcdcd;
+    border-radius: 6px;
+    height: 6px;
+    width: 56%;
+  }
+}
+
+.example__progress-toggle {
+  width: 35px;
+  height: 6px;
+  background: $basic-green;
+  border-radius: 6px;
+  margin-top: 3px;
+  margin-left: 3px;
+
+  @media (min-width: $tablet-with) {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 10px solid #ffffff;
+    position: absolute;
+    top: -16px;
+    left: 46%;
+    display: flex;
+  }
 }

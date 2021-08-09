@@ -1,3 +1,14 @@
+.program {
+  @media (min-width: $desktop-with) {
+    display: flex;
+
+    .program__item {
+      width: 50%;
+      margin-right: 68px;
+    }
+  }
+}
+
 .program__item {
   background: $basic-grey;
 }
