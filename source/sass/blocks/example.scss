@@ -2,13 +2,14 @@
   background: #eaeaea;
 }
 
-.example-box__item{
+.example-box__item {
   display: flex;
   flex-flow: column;
-  @media (min-width: $desktop-with){
+
+  @media (min-width: $desktop-with) {
     flex-flow: row;
 
-    .example__item{
+    .example__item {
       width: 50%;
     }
   }
@@ -41,7 +42,8 @@
     width: 23%;
     overflow: hidden;
   }
-  .example__image{
+
+  .example__image {
     display: block;
   }
 }
