@@ -25,7 +25,7 @@
   &::after {
     content: "";
     display: block;
-    background: url("../../img/mobile/cat-slim.svg") no-repeat;
+    background: url("../img/mobile/cat-slim.svg") no-repeat;
     width: 60px;
     height: 50px;
   }
@@ -35,7 +35,7 @@
   &::after {
     content: "";
     display: block;
-    background: url("../../img/mobile/cat-pro.svg") no-repeat center;
+    background: url("../img/mobile/cat-pro.svg") no-repeat center;
     width: 70px;
     height: 50px;
   }
@@ -82,7 +82,7 @@
     position: absolute;
     top: 3px;
     right: -47px;
-    background: url("../../img/mobile/icon_arrow.svg") no-repeat;
+    background: url("../img/mobile/icon_arrow.svg") no-repeat;
     width: 32px;
     height: 10px;
   }

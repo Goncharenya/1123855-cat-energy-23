@@ -3,7 +3,7 @@
 <head class="html-page">
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body">
@@ -103,44 +103,46 @@
   <section class="example-box">
     <div class="example wrap">
       <h2 class="example__title title-section">Живой пример</h2>
-      <div class="example__item">
-        <div class="example__description">
-          <p>
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой
-            обычный корм на Cat Energy Slim. Отличный результат
-            без изнуряющих тренировок! При этом он не менял своих
-            привычек и по-прежнему спит по 16 часов в день.
-          </p>
-          <div class="specification">
-            <div class="specification__item">
-              <div class="specification__num">
-                <span class="specification__num-value">5 кг</span>
-                <span>Снижение веса</span>
+      <div class="example-box__item">
+        <div class="example__item">
+          <div class="example__description">
+            <p>
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой
+              обычный корм на Cat Energy Slim. Отличный результат
+              без изнуряющих тренировок! При этом он не менял своих
+              привычек и по-прежнему спит по 16 часов в день.
+            </p>
+            <div class="specification">
+              <div class="specification__item">
+                <div class="specification__num">
+                  <span class="specification__num-value">5 кг</span>
+                  <span>Снижение веса</span>
+                </div>
+                <div class="specification__day">
+                  <span class="specification__num-value">60 дней</span>
+                  <span>Затрачено времени</span>
+                </div>
               </div>
-              <div class="specification__day">
-                <span class="specification__num-value">60 дней</span>
-                <span>Затрачено времени</span>
+              <div class="specification__item">
+                <p class="specification__expenses">Затраты на питание: 15000 руб.</p>
               </div>
-            </div>
-            <div class="specification__item">
-              <p class="specification__expenses">Затраты на питание: 15000 руб.</p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="example__item">
-        <div class="example__image example__image--slim">
-          <img src="img/mobile/before-mobile.png" width="311" height="232" alt="">
-        </div>
-        <div class="example__image example__image--pro example__visible-cat">
-          <img src="img/mobile/after-mobile.png" height="240" width="251" alt="">
-        </div>
-        <div class="example__progress">
-          <span class="example__before">Было</span>
-          <div class="example__progress-bar">
-            <div class="example__progress-toggle"></div>
+        <div class="example__item">
+          <div class="example__image example__image--slim">
+            <img src="img/mobile/before-mobile.png" width="311" height="232" alt="">
           </div>
-          <span class="example__after">Стало</span>
+          <div class="example__image example__image--pro example__visible-cat">
+            <img src="img/mobile/after-mobile.png" height="240" width="251" alt="">
+          </div>
+          <div class="example__progress">
+            <span class="example__before">Было</span>
+            <div class="example__progress-bar">
+              <div class="example__progress-toggle"></div>
+            </div>
+            <span class="example__after">Стало</span>
+          </div>
         </div>
       </div>
     </div>
@@ -201,8 +203,10 @@
       <div class="footer__logo-academy wrap footer__part">
         <a href="https://htmlacademy.ru/intensive/adaptive" class="link-classic footer__link-logo-academy">
           <span>HTML Academy</span>
-<!--          <img src="img/htmlacademy.svg" height="34" width="27" alt="HTML Academy">-->
-          <svg class="footer__logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+          <!--          <img src="img/htmlacademy.svg" height="34" width="27" alt="HTML Academy">-->
+          <svg class="footer__logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+            <path
+              d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
           </svg>
         </a>
       </div>

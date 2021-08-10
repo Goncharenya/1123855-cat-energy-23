@@ -1,6 +1,6 @@
 .header-promo {
   position: relative;
-  background: url("../../img/mobile/bg_mobile.jpg") no-repeat center top;
+  background: url("../img/mobile/bg_mobile.jpg") no-repeat center top;
 
   @media (min-width: $tablet-with) {
     background: none;
@@ -56,7 +56,7 @@
   &::after {
     content: "";
     display: block;
-    background: url("../../img/mobile/promo-mobile.png") no-repeat;
+    background: url("../img/mobile/promo-mobile.png") no-repeat;
     width: 280px;
     height: 270px;
 
@@ -69,7 +69,7 @@
     //}
 
     @media (min-width: $tablet-with) {
-      background-image: url("../../img/tablet/index-can-tablet.png");
+      background-image: url("../img/tablet/index-can-tablet.png");
       background-repeat: no-repeat;
       background-position: -2vh 0;
       width: 709px;
@@ -77,7 +77,7 @@
     }
 
     @media (min-width: $desktop-with) {
-      background-image: url("../../img/desktop/desk_bg.png");
+      background-image: url("../img/desktop/desk_bg.png");
       background-repeat: no-repeat;
       position: relative;
       left: 23%;

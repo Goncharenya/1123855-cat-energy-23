@@ -2,6 +2,18 @@
   background: #eaeaea;
 }
 
+.example-box__item{
+  display: flex;
+  flex-flow: column;
+  @media (min-width: $desktop-with){
+    flex-flow: row;
+
+    .example__item{
+      width: 50%;
+    }
+  }
+}
+
 .example__title {
   text-transform: none;
   text-align: left;
@@ -14,11 +26,24 @@
 
 .example__item {
   padding-bottom: 30px;
+  position: relative;
 }
 
 .example__image {
   display: none;
   text-align: center;
+}
+
+@media (min-width: $tablet-with) {
+  .example__image--slim {
+    position: absolute;
+    left: 26%;
+    width: 23%;
+    overflow: hidden;
+  }
+  .example__image{
+    display: block;
+  }
 }
 
 .example__visible-cat {
