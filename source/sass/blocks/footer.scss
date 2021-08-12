@@ -1,5 +1,5 @@
 .footer {
-  background: $basic-grey;
+  //background: $basic-grey;
 }
 
 .footer__item-contact {
@@ -47,6 +47,13 @@
   }
 }
 
+.footer__item-map {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #ffffff;
+  height: 450px;
+}
+
 .footer__logo {
   padding: 30px 0;
   margin: 0 auto;
@@ -67,6 +74,8 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
+  background: $basic-grey;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-with) {
     flex-flow: row;

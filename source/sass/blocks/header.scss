@@ -1,10 +1,12 @@
 .header {
   width: 100%;
+  box-sizing: border-box;
 
   @media (min-width: $desktop-with) {
     background-image: url("../img/desktop/bg_desk.jpg");
     background-repeat: no-repeat;
     background-position: top right;
+    background-size: 50%;
   }
 }
 

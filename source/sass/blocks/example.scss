@@ -1,5 +1,10 @@
 .example {
   background: #eaeaea;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-with) {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 38%, rgba(242, 242, 242, 1) 38%, rgba(242, 242, 242, 1) 100%);
+  }
 }
 
 .example-box__item {
@@ -23,6 +28,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+}
+
+.example__description p {
+  color: $special-dark-grey;
 }
 
 .example__item {
@@ -91,7 +100,7 @@
   width: 35px;
   height: 6px;
   background: $basic-green;
-  border-radius: 6px;
+  border-radius: 50%;
   margin-top: 3px;
   margin-left: 3px;
 

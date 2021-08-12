@@ -8,6 +8,15 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.cards__button {
+  grid-column: 1/-1;
+}
+
+.cards__image {
+  grid-row: 1/3;
+  text-align: center;
+}
+
 .cards__description {
   font-size: 12px;
   line-height: 16px;
