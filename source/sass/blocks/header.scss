@@ -1,9 +1,22 @@
 .header {
   width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-with) {
+    background-image: url("../img/desktop/bg_desk.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 50%;
+  }
 }
 
 .header__main {
   display: flex;
   //flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.header--border {
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 10px;
 }

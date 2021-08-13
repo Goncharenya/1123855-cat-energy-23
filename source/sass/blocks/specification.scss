@@ -1,6 +1,22 @@
 .specification {
   display: flex;
   justify-content: center;
+  flex-flow: column;
+
+  @media (min-width: $tablet-with) {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-with) {
+    flex-flow: column;
+  }
+}
+
+.specification__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .specification__num,

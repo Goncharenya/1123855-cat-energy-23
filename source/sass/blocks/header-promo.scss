@@ -1,5 +1,23 @@
 .header-promo {
-  background: url("../../img/mobile/bg_mobile.jpg") no-repeat center top;
+  position: relative;
+  background: url("../img/mobile/bg_mobile.jpg") no-repeat center top;
+  background-size: contain;
+  min-height: 480px;
+
+  @media (min-width: $tablet-with) {
+    background: none;
+  }
+
+  //@media (min-width: $desktop-with) {
+  //  background-image: url("../img/desktop/bg_desk.jpg");
+  //  background-repeat: no-repeat;
+  //  background-position: 9vh 5vh;
+  //}
+
+  @media (min-width: $desktop-with) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .header-promo__title {
@@ -13,6 +31,28 @@
   margin: 13px;
   padding: 27px 0 12px;
   text-transform: none;
+
+  @media (min-width: $tablet-with) {
+    color: #000000;
+    text-align: left;
+    margin-left: 100px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-with) {
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/desktop/desk_bg.png");
+      background-repeat: no-repeat;
+      width: 510px;
+      height: 510px;
+      //position: relative;
+      //left: 23%;
+      background-position: center;
+    }
+  }
 }
 
 .header-promo__slogan {
@@ -26,13 +66,58 @@
   color: #ffffff;
   text-align: center;
 
+  @media (min-width: $tablet-with) {
+    color: #000000;
+    text-align: left;
+    margin-left: 100px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   &::after {
     content: "";
     display: block;
-    background: url("../../img/mobile/promo-mobile.png");
-    width: 280px;
-    height: 270px;
-    margin-left: 20px;
-    margin-top: 32px;
+    background-image: url("../img/mobile/promo-mobile.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 288px;
+    background-position: center 28px;
+
+    @media (min-width: $tablet-with) {
+      background-image: url("../img/tablet/index-can-tablet.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      min-height: 609px;
+    }
+
+    @media (min-width: $desktop-with) {
+      background: none;
+      //background-image: url("../img/desktop/desk_bg.png");
+      //background-repeat: no-repeat;
+      //position: relative;
+      //left: 23%;
+      //background-position: center;
+    }
+  }
+}
+
+.header-promo__btn {
+  @media (min-width: $tablet-with) {
+    position: absolute;
+    top: 28%;
+    left: 13%;
+
+    .btn {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 14px 26px;
+    }
+  }
+
+  @media (min-width: $desktop-with) {
+    .btn {
+      display: inline-block;
+    }
   }
 }
