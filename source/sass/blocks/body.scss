@@ -6,4 +6,9 @@
   font-size: 14px;
   line-height: 18px;
   width: 100%;
+
+  @media (min-width: $desktop-with) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }

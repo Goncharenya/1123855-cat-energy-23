@@ -3,25 +3,47 @@
 }
 
 .gift__item {
-  background: url("../../img/mobile/gift-photo-mobile.jpg") no-repeat;
+  background-image: url("../img/mobile/gift-photo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  margin-top: 40px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-with) {
+    background-size: cover;
+    flex-flow: row;
+    background-position: 0 66%;
+    min-height: 200px;
+    justify-content: space-evenly;
+  }
 
   &::before {
     content: "";
     //position: absolute;
     display: block;
-    background: url("../../img/icon/icon_gift.svg") no-repeat;
+    background: url("../img/icon/icon_gift.svg") no-repeat;
     width: 80px;
     height: 80px;
     margin-top: 63px;
+
+    @media (min-width: $tablet-with) {
+      margin-top: 0;
+    }
   }
 }
 
 .gift__description {
   text-align: center;
   padding: 40px;
+  width: 160px;
+
+  @media (min-width: $tablet-with) {
+    width: 160px;
+    text-align: left;
+  }
 }

@@ -1,12 +1,15 @@
 .header {
   width: 100%;
   box-sizing: border-box;
+  //@media (min-width: $desktop-with) {
+  //  background-image: url("../img/desktop/bg_desk.jpg");
+  //  background-repeat: no-repeat;
+  //  background-position: top right;
+  //  background-size: 50%;
+  //}
 
   @media (min-width: $desktop-with) {
-    background-image: url("../img/desktop/bg_desk.jpg");
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 50%;
+    padding: 0 50px;
   }
 }
 
@@ -18,5 +21,21 @@
 
 .header--border {
   border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-with) {
+    border-bottom: none;
+  }
+}
+
+.header-bg {
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-with) {
+    background-image: url("../img/desktop/bg_desk.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 50%;
+  }
 }

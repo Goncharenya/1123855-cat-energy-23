@@ -60,19 +60,23 @@
   position: absolute;
   top: 65px;
   left: 0;
-  background: #ffffff;
+  background: transparent;
   z-index: 100;
-
-  @media (min-width: $desktop-with) {
-    background: none;
-    color: #ffffff;
-  }
 
   @media (min-width: $tablet-with) {
     display: flex;
     flex-flow: row;
     position: static;
     min-width: 480px;
+  }
+}
+
+.nav__list-main {
+  .nav__link {
+    @media (min-width: $desktop-with) {
+      background: none;
+      color: #ffffff;
+    }
   }
 }
 
@@ -116,17 +120,16 @@
   color: #000000;
   //display: block;
 
-
   @media (min-width: $tablet-with) {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
   }
 
-  @media (min-width: $desktop-with) {
-    background: none;
-    color: #ffffff;
-  }
+  //@media (min-width: $desktop-with) {
+  //  background: none;
+  //  color: #ffffff;
+  //}
 }
 
 .nav__link--active {
