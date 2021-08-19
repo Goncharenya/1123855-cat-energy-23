@@ -1,5 +1,50 @@
+.social {
+  @media (min-width: $tablet-with) {
+    background: #f2f2f2;
+    min-height: 150px;
+  }
+}
+
 .social__list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.social__item {
+  padding: 20px 0 16px 0;
+  display: block;
+
+  &:nth-child(2) {
+    margin: 0 30px;
+    svg {
+      @media (min-width: $tablet-with) {
+        width: 24px;
+        height: auto;
+      }
+    }
+  }
+  svg {
+    @media (min-width: $tablet-with) {
+     width: 30px;
+      height: auto;
+    }
+  }
+}
+
+.social__list {
+  display: flex;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-with) {
+    border: none;
+    width: 30%;
+  }
 }

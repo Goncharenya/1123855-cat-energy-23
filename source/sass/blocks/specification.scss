@@ -1,6 +1,6 @@
 .specification {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-flow: column;
 
   @media (min-width: $tablet-with) {
@@ -15,7 +15,7 @@
 
 .specification__item {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -23,20 +23,57 @@
 .specification__day {
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  //justify-content: center;
   align-items: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
   color: #000000;
+  text-transform: none;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  width: 124px;
+  height: 56px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-with) {
+    width: 162px;
+    height: 77px;
+  }
+}
+
+.specification__day {
+  margin-left: 30px;
 }
 
 .specification__num-value {
+  font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 14px;
+
+  @media (min-width: $tablet-with) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.specification__num-desc-value {
+  //padding: 10px 0;
+  width: 60%;
+  margin-top: 8px;
+  background: #eaeaea;
+
+  @media (min-width: $tablet-with) {
+    font-size: 14px;
+    line-height: 14px;
+    width: 80%;
+    margin-top: 16px;
+  }
 }
 
 .specification__expenses {
@@ -48,4 +85,13 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 34px auto 25px auto;
+
+  @media (min-width: $tablet-with) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 70%;
+    text-align: right;
+    margin: 0;
+  }
 }
