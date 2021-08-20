@@ -1,3 +1,7 @@
+.product__title {
+  margin: 10px 0;
+}
+
 .product__description {
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -14,5 +18,5 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 10px 0 20px;
 }

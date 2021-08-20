@@ -13,12 +13,6 @@
   }
 }
 
-.program__item--slim {
-  .program__title {
-    margin-left: 13px;
-  }
-}
-
 .program__item {
   background: $basic-grey;
 }
@@ -50,6 +44,10 @@
     background-position: 50px 40px;
     padding-bottom: 34px;
     margin-bottom: 0;
+  }
+
+  .program__title {
+    margin-left: 13px;
   }
 }
 

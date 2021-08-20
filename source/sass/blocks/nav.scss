@@ -132,6 +132,12 @@
 
   @media (min-width: $desktop-with) {
     background: none;
+    color: #000000;
+  }
+}
+
+.nav__link-main {
+  @media (min-width: $desktop-with) {
     color: #ffffff;
   }
 }

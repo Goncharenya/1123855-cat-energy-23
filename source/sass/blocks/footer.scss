@@ -17,6 +17,9 @@
     padding: 30px;
     left: 110px;
     margin-top: 95px;
+    width: 570px;
+    min-height: 201px;
+    box-sizing: border-box;
   }
 }
 
@@ -42,13 +45,16 @@
     width: 171px;
     font-size: 20px;
     line-height: 21px;
-
   }
 }
 
 .footer__contact {
   width: 50%;
-  text-align: right;
+  text-align: left;
+
+  @media (min-width: $tablet-with) {
+    text-align: right;
+  }
 }
 
 .footer__contact p {

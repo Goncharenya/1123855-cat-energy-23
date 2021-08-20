@@ -20,8 +20,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid #ebebeb;
-  //padding-left: 20px;
-  min-height: 190px;
+  padding: 20px 0 26px 0;
+  min-height: 210px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-with) {
@@ -55,7 +55,7 @@
 
 .cards__title {
   width: 54%;
-  margin-top: 27px;
+  //margin-top: 27px;
 
   @media (min-width: $tablet-with) {
     width: 40%;
@@ -71,7 +71,7 @@
   grid-column: 1/-1;
   //margin-top: 23px;
   width: 280px;
-  margin: 15px auto 25px auto;
+  margin: 13px 0 0 0;
 
   @media (min-width: $tablet-with) {
     width: 248px;
@@ -90,8 +90,11 @@
   justify-items: center;
   display: grid;
   align-items: center;
-  margin-top: 38px;
-  margin-left: 17px;
+  //margin-top: 38px;
+  //margin-left: 17px;
+  img {
+    margin-top: 10px;
+  }
 
   @media (min-width: $tablet-with) {
     margin-top: -40px;
@@ -140,7 +143,7 @@
   //position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  //justify-content: space-between;
   align-items: center;
 
   &::before {
@@ -149,17 +152,18 @@
     background: url("../img/plus.svg") no-repeat center;
     width: 60px;
     height: 60px;
-    padding: 10px 0;
-    //background-position: center;
+    margin-top: -16px;
   }
 
   .title {
-    margin: 0;
+    margin: 8px 0 0 0;
   }
 
   p {
-    margin-top: 10px;
-    margin-bottom: 0;
+    margin-top: 8px;
+    margin-bottom: 9px;
+    font-size: 12px;
+    line-height: 16px;
   }
 
   .cards__button-more a {
