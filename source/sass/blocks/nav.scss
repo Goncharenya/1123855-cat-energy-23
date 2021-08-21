@@ -60,23 +60,19 @@
   position: absolute;
   top: 65px;
   left: 0;
-  background: transparent;
+  background: #ffffff;
   z-index: 100;
+
+  @media (min-width: $desktop-with) {
+    background: none;
+    color: #ffffff;
+  }
 
   @media (min-width: $tablet-with) {
     display: flex;
     flex-flow: row;
     position: static;
     min-width: 480px;
-  }
-}
-
-.nav__list-main {
-  .nav__link {
-    @media (min-width: $desktop-with) {
-      background: none;
-      color: #ffffff;
-    }
   }
 }
 
@@ -108,6 +104,13 @@
       margin-right: 20px;
     }
   }
+
+  &:first-child {
+    @media (min-width: $tablet-with) {
+      margin-right: -18px;
+      margin-left: -7px;
+    }
+  }
 }
 
 .nav__link {
@@ -120,16 +123,23 @@
   color: #000000;
   //display: block;
 
+
   @media (min-width: $tablet-with) {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
   }
 
-  //@media (min-width: $desktop-with) {
-  //  background: none;
-  //  color: #ffffff;
-  //}
+  @media (min-width: $desktop-with) {
+    background: none;
+    color: #000000;
+  }
+}
+
+.nav__link-main {
+  @media (min-width: $desktop-with) {
+    color: #ffffff;
+  }
 }
 
 .nav__link--active {

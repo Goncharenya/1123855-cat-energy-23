@@ -2,16 +2,13 @@
   //background: $basic-grey;
 }
 
-.footer__item-contact-catalog {
-  background: #f2f2f2;
-}
-
 .footer__item-contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-with) {
-    padding: 0 50px;
+    padding: 45px 70px;
   }
 
   @media (min-width: $desktop-with) {
@@ -20,11 +17,18 @@
     padding: 30px;
     left: 110px;
     margin-top: 95px;
+    width: 570px;
+    min-height: 201px;
+    box-sizing: border-box;
   }
 }
 
 .footer__item-contact-main {
   background: #ffffff;
+}
+
+.footer__vacancy {
+  width: 50%;
 }
 
 .footer__vacancy p {
@@ -35,19 +39,35 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  margin-top: 28px;
 
   @media (min-width: $tablet-with) {
     width: 171px;
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
+
+.footer__contact {
+  width: 50%;
+  text-align: left;
+
+  @media (min-width: $tablet-with) {
+    text-align: right;
   }
 }
 
 .footer__contact p {
   line-height: 20px;
   color: $special-dark-grey;
-  text-align: right;
+  //text-align: right;
+  margin-top: 27px;
 
   @media (min-width: $tablet-with) {
     width: 171px;
+    float: right;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -55,11 +75,23 @@
   max-width: 1440px;
   margin: 0 auto;
   background: #ffffff;
-  height: 450px;
+  height: 362px;
+
+  @media (min-width: $tablet-with) {
+    height: 400px;
+  }
+
+  .footer__iframe {
+    height: 362px;
+
+    @media (min-width: $tablet-with) {
+      height: 400px;
+    }
+  }
 }
 
 .footer__logo {
-  padding: 30px 0;
+  padding: 40px 0 26px 0;
   margin: 0 auto;
 
   @media (min-width: $tablet-with) {
@@ -71,6 +103,10 @@
 @media (min-width: $tablet-with) {
   .footer__part {
     width: 30%;
+
+    &:nth-child(2) {
+      margin-left: 30px;
+    }
   }
 }
 
@@ -84,31 +120,7 @@
   @media (min-width: $tablet-with) {
     flex-flow: row;
     align-items: center;
-  }
-}
-
-.social__list {
-  display: flex;
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #d9d9d9;
-  width: 100%;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  @media (min-width: $tablet-with) {
-    border: none;
-    width: 30%;
-  }
-}
-
-.social__item {
-  padding: 15px 0;
-  display: block;
-
-  &:nth-child(2) {
-    margin: 0 30px;
+    padding-top: 25px;
   }
 }
 
@@ -118,13 +130,15 @@
 
   @media (min-width: $tablet-with) {
     width: 30%;
+    margin-right: 0;
   }
 }
 
 .footer__logo-svg {
   fill: $special-dark-grey;
-  width: 27px;
-  height: 34px;
+  width: 39px;
+  height: 39px;
+  margin-right: -7px;
 }
 
 .footer__link-logo-academy {

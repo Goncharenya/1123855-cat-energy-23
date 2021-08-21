@@ -4,11 +4,14 @@
   @media (min-width: $tablet-with) {
     //max-width: 768px;
     margin: 0 auto;
+    padding: 0 30px;
     //width: 92%;
   }
 
   @media (min-width: $desktop-with) {
     max-width: 1440px;
     margin: 0 auto;
+    width: 83%;
+    padding: 0;
   }
 }

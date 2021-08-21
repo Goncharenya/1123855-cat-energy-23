@@ -35,9 +35,15 @@
   @media (min-width: $tablet-with) {
     color: #000000;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 112px;
+    margin-top: 25px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-with) {
+    margin-left: 139px;
+    margin-top: 77px;
   }
 
   @media (min-width: $desktop-with) {
@@ -48,9 +54,9 @@
       background-repeat: no-repeat;
       width: 510px;
       height: 510px;
-      //position: relative;
-      //left: 23%;
-      background-position: center;
+      top: -56px;
+      left: 38%;
+      //background-position: center;
     }
   }
 }
@@ -69,9 +75,15 @@
   @media (min-width: $tablet-with) {
     color: #000000;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 115px;
+    margin-top: 30px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-with) {
+    margin-left: 140px;
+    margin-top: 30px;
   }
 
   &::after {
@@ -80,19 +92,21 @@
     background-image: url("../img/mobile/promo-mobile.png");
     background-repeat: no-repeat;
     width: 100%;
-    height: 288px;
+    min-height: 303px;
     background-position: center 28px;
 
     @media (min-width: $tablet-with) {
       background-image: url("../img/tablet/index-can-tablet.png");
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: -90px 20px;
       width: 100%;
       min-height: 609px;
+      padding-bottom: 20px;
     }
 
     @media (min-width: $desktop-with) {
       background: none;
+      min-height: auto;
       //background-image: url("../img/desktop/desk_bg.png");
       //background-repeat: no-repeat;
       //position: relative;
@@ -103,19 +117,26 @@
 }
 
 .header-promo__btn {
+  width: 280px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-with) {
     position: absolute;
-    top: 28%;
-    left: 13%;
+    top: 31%;
+    left: 15%;
 
     .btn {
       font-size: 20px;
       line-height: 20px;
-      padding: 14px 26px;
+      padding: 16px 0;
+      width: 240px;
     }
   }
 
   @media (min-width: $desktop-with) {
+    left: 10.5%;
+    top: 54%;
+
     .btn {
       display: inline-block;
     }
