@@ -1,6 +1,14 @@
 .logo__link {
   display: block;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
 }
 
 .logo__image {
@@ -10,4 +18,13 @@
 .logo__text {
   margin-left: 53px;
   margin-bottom: 7px;
+}
+
+.logo__mobile-text {
+  margin-left: 51px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-with) {
+    display: none;
+  }
 }

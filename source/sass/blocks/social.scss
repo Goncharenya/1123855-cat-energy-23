@@ -44,3 +44,21 @@
     width: 30%;
   }
 }
+
+.social__item-svg {
+  fill: #666666;
+  stroke: none;
+
+  &:hover {
+    fill: $basic-green;
+  }
+}
+
+.social__item-svg-facebook {
+  fill: none;
+  stroke: #666666;
+
+  &:hover {
+    stroke: $basic-green;
+  }
+}

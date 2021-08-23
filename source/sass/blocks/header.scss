@@ -9,14 +9,24 @@
   //}
 
   @media (min-width: $desktop-with) {
-    padding: 0 50px;
+    //padding: 0 50px;
+  }
+}
+
+.header__item {
+  @media (min-width: $desktop-with) {
+    margin-top: 50px;
   }
 }
 
 .header__main {
   display: flex;
-  //flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 10px;
+
+  @media (min-width: $desktop-with) {
+    margin-top: 50px;
+  }
 }
 
 .header--border {

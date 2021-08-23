@@ -13,7 +13,12 @@
     font-size: 60px;
     line-height: 60px;
     border-bottom: none;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
+    padding: 40px 0 0 30px;
+  }
+
+  @media (min-width: $desktop-with) {
+    padding: 45px 0 0 30px;
   }
 }
 

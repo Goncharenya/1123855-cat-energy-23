@@ -10,4 +10,13 @@
   display: block;
   color: #ffffff;
   padding: 10px;
+
+  &:hover {
+    background: $basic_green-2;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: $basic_green-2;
+  }
 }

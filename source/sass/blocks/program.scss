@@ -174,4 +174,12 @@
       right: -57px;
     }
   }
+
+  &:hover::after {
+    background: url("../img/hover_arrow.svg") no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

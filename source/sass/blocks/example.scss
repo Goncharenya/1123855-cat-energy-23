@@ -163,6 +163,15 @@
   color: #000000;
   cursor: pointer;
 
+  &:hover {
+    border-bottom: 1px solid $special-dark-grey;
+  }
+
+  &:active {
+    border-bottom: none;
+  }
+
+
   @media (min-width: $tablet-with) {
     font-size: 20px;
     line-height: 30px;
@@ -214,6 +223,16 @@
   border-radius: 5px;
   margin-top: 3px;
   margin-left: 3px;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+  cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+  }
+
+  &:active {
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+  }
 
   @media (min-width: $tablet-with) {
     width: 8px;

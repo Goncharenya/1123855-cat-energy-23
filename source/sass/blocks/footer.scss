@@ -25,6 +25,12 @@
 
 .footer__item-contact-main {
   background: #ffffff;
+  position: relative;
+}
+
+.footer__item-contact-catalog {
+  background: #f2f2f2;
+  position: relative;
 }
 
 .footer__vacancy {
@@ -128,17 +134,23 @@
   padding: 20px 0 20px 0;
   width: 100%;
 
+  &:hover .footer__logo-academy-svg-img {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-with) {
     width: 30%;
     margin-right: 0;
   }
 }
 
-.footer__logo-svg {
-  fill: $special-dark-grey;
-  width: 39px;
-  height: 39px;
-  margin-right: -7px;
+.footer__logo-academy-svg-img {
+  margin-left: 30px;
+  fill: #666666;
 }
 
 .footer__link-logo-academy {
