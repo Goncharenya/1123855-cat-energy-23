@@ -4,4 +4,10 @@
   @media (min-width: $tablet-with) {
     padding: 0 70px;
   }
+
+  @media (min-width: $tablet-with) {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0;
+  }
 }

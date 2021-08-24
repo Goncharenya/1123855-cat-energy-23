@@ -11,8 +11,8 @@
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  margin-top: 40px;
-  margin-bottom: 35px;
+  margin-top: 25px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-with) {
     background-size: cover;
@@ -21,6 +21,7 @@
     min-height: 200px;
     justify-content: space-evenly;
     margin-top: 65px;
+    margin-bottom: 71px;
   }
 
   @media (min-width: $desktop-with) {

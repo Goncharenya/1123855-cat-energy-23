@@ -75,7 +75,21 @@
     position: static;
     min-width: 483px;
   }
+
+  @media (max-width: $tablet-with) {
+    display: flex;
+  }
 }
+
+//.nav__list {
+//  @media (min-width: $tablet-with) {
+//    //display: none;
+//  }
+//
+//  @media (max-width: $tablet-with) {
+//    display: flex;
+//  }
+//}
 
 .nav__list--open {
   display: flex;
@@ -88,6 +102,10 @@
   position: relative;
   padding: 22px 0;
 
+  @media (min-width: $desktop-with) {
+    padding: 16px 0 22px 0;
+  }
+
   &:last-child {
     border-bottom: 1px solid #e6e6e6;
 
@@ -98,6 +116,7 @@
 
   @media (min-width: $tablet-with) {
     border: none;
+    padding: 17px 0 15px 0;
   }
 
   &:nth-child(2) {
@@ -167,10 +186,4 @@
 .nav__link--active {
   padding-bottom: 6px;
   border-bottom: 2px solid $basic-green;
-}
-
-.nav {
-  &:hover .nav__list {
-    display: flex;
-  }
 }

@@ -1,5 +1,5 @@
 .additional {
-  padding-bottom: 39px;
+  //padding-bottom: 39px;
 }
 
 .additional__title {
@@ -19,50 +19,45 @@
     font-size: 36px;
     line-height: 36px;
     margin: 47px 0 50px 45px;
-    width: 47%;
+    width: 49%;
   }
 
   @media (min-width: $desktop-with) {
-    margin: 60px 0 50px 90px;
-    width: 27%;
-  }
+    margin: 60px auto 50px auto;
+    width: 1200px;
+    padding-left: 0;
 
-  //&::after {
-  //  content: "";
-  //  width: 100%;
-  //  height: 1px;
-  //  background: $basic-green;
-  //  position: absolute;
-  //  top: 32px;
-  //  left: 54px;
-  //  z-index: -1;
-  //
-  //  @media (min-width: $tablet-with) {
-  //    height: 2px;
-  //    width: 193%;
-  //    top: 39px;
-  //    left: -45px;
-  //  }
-  //
-  //  @media (min-width: $desktop-with) {
-  //    display: none;
-  //  }
-  //}
+    &::before {
+      //content: "";
+      width: 19%;
+      height: 2px;
+      background: $basic-green;
+      position: absolute;
+      left: -114px;
+      right: 0;
+      top: 36px;
+      z-index: -1;
+    }
+  }
 }
 
 .additional__title-box {
   position: relative;
 
   &::after {
-    content: "";
+    //content: "";
     width: 100%;
     height: 2px;
     background: $basic-green;
     position: absolute;
     left: 0;
     right: 0;
-    top: 40px;
+    top: 33px;
     z-index: -1;
+
+    @media (min-width: $tablet-with) {
+      top: 40px;
+    }
   }
 }
 
@@ -73,30 +68,31 @@
 
   @media (min-width: $tablet-with) {
     border: 1px solid #cdcdcd;
-    padding: 0 40px;
+    //padding: 0 40px;
   }
 
   @media (min-width: $desktop-with) {
     border: none;
     padding: 0;
+    margin-bottom: 81px;
   }
 }
 
 .additional__item {
   border-top: 1px solid #cdcdcd;
-  padding-top: 18px;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-with) {
     border-top: none;
-    padding-bottom: 33px;
-    padding-top: 0;
+    padding: 0 40px 33px 40px;
+    border-bottom: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-with) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 4px;
+    padding: 0 0 4px 0;
     border-bottom: 1px solid #cdcdcd;
   }
 
@@ -130,6 +126,13 @@
 }
 
 .additional__button a {
-  width: 244px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-with) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-with) {
+    width: 244px;
+  }
 }

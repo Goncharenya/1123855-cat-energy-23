@@ -18,7 +18,9 @@
   }
 
   @media (min-width: $desktop-with) {
-    padding: 45px 0 0 30px;
+    padding: 45px 0 0 0;
+    margin: 0 auto 10rem auto;
+    width: 1200px;
   }
 }
 

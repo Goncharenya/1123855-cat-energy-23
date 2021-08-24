@@ -21,7 +21,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid #ebebeb;
-  padding: 20px 0 26px 0;
+  padding: 14px 0 26px 0;
   min-height: 210px;
   box-sizing: border-box;
 
@@ -182,7 +182,7 @@
     background: url("../img/plus.svg") no-repeat center;
     width: 60px;
     height: 60px;
-    margin-top: -16px;
+    margin-top: -10px;
 
     @media (min-width: $tablet-with) {
       background: url("../img/plus_desctop.svg") no-repeat center;
