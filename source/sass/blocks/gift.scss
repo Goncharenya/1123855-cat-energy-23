@@ -11,8 +11,8 @@
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  margin-top: 40px;
-  margin-bottom: 35px;
+  margin-top: 25px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-with) {
     background-size: cover;
@@ -20,11 +20,23 @@
     background-position: 0 66%;
     min-height: 200px;
     justify-content: space-evenly;
+    margin-top: 65px;
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-with) {
+    flex-flow: column;
+    background-position: -30px 0;
+    margin-top: 0;
+    padding: 0;
+    width: 245px;
+    height: 288px;
+    background-size: cover;
+    margin-bottom: 50px;
   }
 
   &::before {
     content: "";
-    //position: absolute;
     display: block;
     background: url("../img/icon/icon_gift.svg") no-repeat;
     width: 80px;
@@ -33,6 +45,11 @@
 
     @media (min-width: $tablet-with) {
       margin-top: 0;
+    }
+
+    @media (min-width: $desktop-with) {
+      position: relative;
+      top: 55px;
     }
   }
 }
@@ -45,5 +62,11 @@
   @media (min-width: $tablet-with) {
     width: 160px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-with) {
+    text-align: center;
+    margin-top: 97px;
+    padding: 0;
   }
 }

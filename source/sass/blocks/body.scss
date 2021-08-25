@@ -8,7 +8,11 @@
   width: 100%;
 
   @media (min-width: $desktop-with) {
-    max-width: 1440px;
+    //max-width: 1440px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-with) {
+    //margin-top: 12px;
   }
 }

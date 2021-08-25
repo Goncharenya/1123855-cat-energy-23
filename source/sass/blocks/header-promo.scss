@@ -35,15 +35,15 @@
   @media (min-width: $tablet-with) {
     color: #000000;
     text-align: left;
-    margin-left: 112px;
-    margin-top: 25px;
+    margin-left: 117px;
+    margin-top: 23px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-with) {
-    margin-left: 139px;
-    margin-top: 77px;
+    margin-left: 193px;
+    margin-top: 73px;
   }
 
   @media (min-width: $desktop-with) {
@@ -75,14 +75,14 @@
   @media (min-width: $tablet-with) {
     color: #000000;
     text-align: left;
-    margin-left: 115px;
+    margin-left: 118px;
     margin-top: 30px;
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop-with) {
-    margin-left: 140px;
+    margin-left: 194px;
     margin-top: 30px;
   }
 
@@ -122,23 +122,30 @@
 
   @media (min-width: $tablet-with) {
     position: absolute;
-    top: 31%;
-    left: 15%;
+    top: 30.5%;
+    left: 15.5%;
 
     .btn {
       font-size: 20px;
       line-height: 20px;
       padding: 16px 0;
-      width: 240px;
+      width: 244px;
     }
   }
 
   @media (min-width: $desktop-with) {
-    left: 10.5%;
+    left: 13.5%;
     top: 54%;
 
     .btn {
       display: inline-block;
     }
   }
+
+  //.btn {
+  //  &:active {
+  //    color: rgba(255, 255, 255, .3);
+  //    background: darken($basic-green, 10%);
+  //  }
+  //}
 }

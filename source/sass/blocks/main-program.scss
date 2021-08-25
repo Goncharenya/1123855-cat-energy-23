@@ -11,7 +11,12 @@
     font-size: 60px;
     line-height: 60px;
     margin-top: 52px;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-with) {
+    margin-top: 73px;
+    margin-bottom: 59px;
   }
 }
 
@@ -28,7 +33,7 @@
   @media (min-width: $tablet-with) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 67px;
   }
 }
 

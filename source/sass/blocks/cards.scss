@@ -5,8 +5,9 @@
   justify-content: center;
 
   @media (min-width: $tablet-with) {
-    grid-gap: 80px;
+    grid-gap: 137px 60px;
     grid-template-columns: repeat(2, 324px);
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-with) {
@@ -20,15 +21,16 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid #ebebeb;
-  padding: 20px 0 26px 0;
+  padding: 14px 0 26px 0;
   min-height: 210px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-with) {
     grid-template-columns: auto;
     justify-items: center;
-    //background: linear-gradient(0deg, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 1) 75%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 100%);
     background: #f2f2f2;
+    padding: 0 0 40px 0;
+    //background: linear-gradient(0deg, rgba(242,242,242,1) 0%, rgba(242,242,242,1) 90%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%);
 
     &:last-child {
       background: #ffffff;
@@ -36,10 +38,17 @@
       padding: 0 40px;
       text-align: center;
     }
+
+    &:nth-child(odd) {
+      img {
+        margin-top: -23px;
+      }
+    }
   }
 
   @media (min-width: $desktop-with) {
     width: 245px;
+    padding: 0;
   }
 
   .title {
@@ -58,8 +67,9 @@
   //margin-top: 27px;
 
   @media (min-width: $tablet-with) {
-    width: 40%;
+    width: 41%;
     text-align: center;
+    margin-top: 24px;
   }
 
   @media (min-width: $desktop-with) {
@@ -75,6 +85,7 @@
 
   @media (min-width: $tablet-with) {
     width: 248px;
+    margin: 32px 0 0 0;
   }
 
   @media (min-width: $desktop-with) {
@@ -97,9 +108,26 @@
   }
 
   @media (min-width: $tablet-with) {
-    margin-top: -40px;
+    margin-top: -53px;
+
+    img {
+      height: auto;
+      width: auto;
+      margin-bottom: 5px;
+    }
   }
 }
+
+//.cards__image {
+//  @media (min-width: $tablet-with) {
+//    img {
+//      height: auto;
+//      width: auto;
+//      margin-bottom: 5px;
+//    }
+//  }
+//}
+
 
 .cards__description {
   font-size: 12px;
@@ -112,6 +140,7 @@
   @media (min-width: $tablet-with) {
     padding: 0 40px;
     box-sizing: border-box;
+    margin-top: 13px;
   }
 
   @media (min-width: $desktop-with) {
@@ -132,7 +161,7 @@
   @media (min-width: $tablet-with) {
     width: 100%;
     box-sizing: border-box;
-    padding: 10px 0;
+    padding: 8px 0;
     border-bottom: 1px solid #cdcdcd;
     font-size: 16px;
     line-height: 16px;
@@ -140,23 +169,41 @@
 }
 
 .cards__item-more {
-  //position: relative;
   display: flex;
   flex-direction: column;
-  //justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-with) {
+    display: grid;
+  }
 
   &::before {
     content: "";
-    //position: absolute;
     background: url("../img/plus.svg") no-repeat center;
     width: 60px;
     height: 60px;
-    margin-top: -16px;
+    margin-top: -10px;
+
+    @media (min-width: $tablet-with) {
+      background: url("../img/plus_desctop.svg") no-repeat center;
+      margin-top: 31px;
+    }
+
+    @media (min-width: $desktop-with) {
+      margin-top: 45px;
+    }
   }
 
   .title {
     margin: 8px 0 0 0;
+
+    @media (min-width: $tablet-with) {
+      width: 60%;
+    }
+
+    @media (min-width: $desktop-with) {
+      width: 82%;
+    }
   }
 
   p {
@@ -164,12 +211,37 @@
     margin-bottom: 9px;
     font-size: 12px;
     line-height: 16px;
+
+    @media (min-width: $tablet-with) {
+      width: 73%;
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    @media (min-width: $desktop-with) {
+      width: 100%;
+      margin-top: 0;
+    }
   }
 
-  .cards__button-more a {
-    background: #f2f2f2;
-    color: $special-dark-grey;
-    font-size: 16px;
-    line-height: 20px;
+  .cards__button-more {
+    &:hover {
+      background: #ebebeb;
+    }
+
+    &:active a {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    a {
+      background: #f2f2f2;
+      color: $special-dark-grey;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @media (min-width: $tablet-with) {
+      margin-bottom: 24px;
+    }
   }
 }
