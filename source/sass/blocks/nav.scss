@@ -76,9 +76,13 @@
     min-width: 483px;
   }
 
-  @media (max-width: $tablet-with) {
-    display: flex;
-  }
+  //@media (max-width: $tablet-with) {
+  //  display: flex;
+  //}
+}
+
+.menu_open {
+  display: flex;
 }
 
 //.nav__list {
@@ -91,9 +95,9 @@
 //  }
 //}
 
-.nav__list--open {
-  display: flex;
-}
+//.nav__list--open {
+//  display: flex;
+//}
 
 .nav__item {
   width: 100%;
