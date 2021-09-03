@@ -5,6 +5,24 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <!--  <link rel="icon" href="favicons/favicon152.svg" type="image/svg+xml">-->
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="apple -icon-60x60.png ">
+  <link rel=" apple-touch-icon " sizes=" 72x72 " href="apple-icon-72x72.png ">
+  <link rel=" apple-touch-icon " sizes="76x76" href="apple-icon-76x76.png">
+  <link rel="apple-touch-icon " sizes=" 114x114 " href="apple-icon-114x114.png ">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png ">
+  <link rel=" apple-touch-icon " sizes=" 152x152 " href="apple-icon-152x152.png ">
+  <link rel=" apple-touch-icon " sizes="180x180" href="apple-icon-180x180.png">
+  <link rel="icon" type="image / png" sizes="192x192" href="android-icon-192x192.png">
+  <link rel="icon" type="image / png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image / png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image / png" sizes="16x16" href="favicon-16x16. png ">
+  <link rel=" manifest " href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body class="body">
 <header class="header">
@@ -34,11 +52,11 @@
     </nav>
   </div>
 </header>
-<main class="main-program wrap">
-  <h1 class="main-program__title">Подбор программы</h1>
-  <p class="main-program__description">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
+<main class="main-program">
+  <h1 class="main-program__title wrap">Подбор программы</h1>
+  <p class="main-program__description wrap">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
   <form class="main-program__form form" action="https://echo.htmlacademy.ru" method="get">
-    <div class="form__box-desktop">
+    <div class="form__box-desktop wrap wrap-program">
       <fieldset class="form__box">
         <div class="form__item-user">
           <input class="form__name form__item-input" type="text" name="name" id="name" placeholder="Барсик">
@@ -63,9 +81,12 @@
         <label class="form__radio-label" for="some-thing">Не знаю (Нужен ваш совет)</label>
       </fieldset>
     </div>
+    <div class="form__title-box form__title-contact">
+      <h2 class="form__title">Контактные данные (владельца кота)</h2>
+    </div>
     <!-- Контактные данные-->
-    <fieldset class="form__box">
-      <legend class="form__title">Контактные данные (владельца кота)</legend>
+    <fieldset class="form__box form__box-wrap wrap wrap-program">
+      <legend class="visually-hidden">Контактные данные (владельца кота)</legend>
       <div class="form__box-desktop">
         <div class="form__item-user">
           <input class="form__email form__item form__item-input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
@@ -78,14 +99,19 @@
       </div>
     </fieldset>
     <!--Комментарий-->
-    <fieldset class="form__box">
-      <legend class="form__title">Комментарий</legend>
-      <textarea class="form__textarea" name="message" id="message"
-                placeholder="Расскажите обо всех повадках кота"></textarea>
+    <div class="form__title-box form__title-comment">
+      <h2 class="form__title">Комментарий</h2>
+    </div>
+    <fieldset class="form__box form__box-wrap wrap wrap-program">
+      <legend class="visually-hidden">Комментарий</legend>
+      <textarea class="form__textarea" name="message" id="message" placeholder="Расскажите обо всех повадках кота"></textarea>
       <label for="message" class="visually-hidden"></label>
     </fieldset>
-    <fieldset class="form__box form__box-checkbox">
-      <legend class="form__title form__box-checkbox-title">Дополнительно</legend>
+    <div class="form__title-box form__box-checkbox-title form__title-checkbox">
+      <h2 class="form__title">Дополнительно</h2>
+    </div>
+    <fieldset class="form__box form__box-checkbox form__box-wrap wrap wrap-program">
+      <legend class="visually-hidden">Дополнительно</legend>
       <div class="form__additional">
         <input class="form__checkbox form__item visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
         <label class=" additional-product__item additional-product__item-first" for="sweetener">сахарозаменитель</label>
@@ -97,7 +123,7 @@
         <label class=" additional-product__item" for="vitamin">витамины</label>
       </div>
     </fieldset>
-    <fieldset class="form__box">
+    <fieldset class="form__box form__box-wrap wrap wrap-program">
       <div class="form__box-desktop form__box-desktop-button">
         <button class="btn form__button">отправить заявку</button>
         <span class="form__box-star">* — Обязательные поля</span>
@@ -109,8 +135,7 @@
   <div class="footer__item footer__item-contact-catalog">
     <div class="wrap footer__item-contact">
       <div class="footer__vacancy">
-        <p>
-          приглашаем <br>к сотрудничеству дилеров!
+        <p>приглашаем <br>к сотрудничеству дилеров!
         </p>
       </div>
       <div class="footer__contact">
@@ -122,9 +147,7 @@
     </div>
   </div>
   <div class="footer__item footer__item-map">
-    <iframe class="footer__iframe"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586849!2d30.320853352161127!3d59.93871648178725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627064731523!5m2!1sru!2sru"
-      width="100%" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe class="footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586849!2d30.320853352161127!3d59.93871648178725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627064731523!5m2!1sru!2sru" width="100%" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </div>
   <div class="footer__item social">
     <div class="wrap footer__item-social">
@@ -163,5 +186,6 @@
     </div>
   </div>
 </footer>
+<script src="js/main_menu.js"></script>
 </body>
 </html>

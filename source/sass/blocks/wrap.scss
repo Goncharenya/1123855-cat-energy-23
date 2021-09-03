@@ -15,3 +15,27 @@
     padding: 0;
   }
 }
+
+@media (min-width: $tablet-with) {
+  .body .wrap-program {
+    // width: 82%;
+    //margin: 10px auto 0;
+    padding: 0 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .body .wrap-program {
+    // width: 82%;
+    //margin: 10px auto 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-with) {
+  .body .wrap-program {
+    max-width: 1440px;
+    padding: 0 110px;
+  }
+}

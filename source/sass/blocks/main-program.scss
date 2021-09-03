@@ -10,13 +10,14 @@
   @media (min-width: $tablet-with) {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 52px;
+    margin-top: 62px;
     margin-bottom: 52px;
+    margin-left: 40px;
   }
 
   @media (min-width: $desktop-with) {
-    margin-top: 73px;
-    margin-bottom: 59px;
+    margin: 70px auto 57px auto;
+    max-width: 1440px;
   }
 }
 
@@ -33,7 +34,13 @@
   @media (min-width: $tablet-with) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 67px;
+    margin: 54px 0 62px 0;
+  }
+
+  @media (min-width: $desktop-with) {
+    margin: 54px auto 62px auto;
+    max-width: 1440px;
+    box-sizing: border-box;
   }
 }
 

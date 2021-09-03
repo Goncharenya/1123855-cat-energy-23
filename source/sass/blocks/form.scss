@@ -1,5 +1,16 @@
+input,
+textarea {
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+}
+
 .form {
   text-transform: uppercase;
+  position: relative;
 }
 
 .form__item-user {
@@ -12,6 +23,10 @@
 
   @media (min-width: $tablet-with) {
     margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-with) {
+    margin-bottom: 19px;
   }
 }
 
@@ -46,27 +61,42 @@
 .form__email {
   background-image: url("../img/icon/icon_mail.svg");
   background-repeat: no-repeat;
-  background-position: 98% center;
+  background-position: 97% center;
 }
 
 .form__phone {
   background-image: url("../img/icon/icon_phone.svg");
   background-repeat: no-repeat;
-  background-position: 98% center;
+  background-position: 97% center;
 }
 
 .form__item-user-email {
-  min-width: 70px;
+  min-width: 50px;
+
+  @media (min-width: $tablet-with) {
+    min-width: 70px;
+  }
 }
 
 .form__item-user-phone {
-  min-width: 90px;
+  min-width: 70px;
+
+  @media (min-width: $tablet-with) {
+    min-width: 90px;
+  }
 }
 
 .form__item-input {
   border: 1px solid #e7e7e7;
   padding: 13px;
   width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
 
   &::placeholder {
     font-family: "Oswald", sans-serif;
@@ -86,11 +116,16 @@
   @media (min-width: $tablet-with) {
     padding: 16px 50px 16px 16px;
   }
+
+  @media (min-width: $tablet-with) {
+    padding: 13px 50px 9px 16px;
+  }
 }
 
 .form__box-desktop {
   display: grid;
   width: 100%;
+  box-sizing: border-box;
 
   @media (min-width: $desktop-with) {
     grid-template-columns: 1fr 1fr;
@@ -98,7 +133,8 @@
   }
 
   @media (min-width: $tablet-with) {
-    margin-bottom: 5px;
+    //margin-bottom: 5px;
+    //width: auto;
   }
 }
 
@@ -110,6 +146,11 @@
   border: none;
   margin: 0;
   padding: 0;
+
+  //@media (min-width: $tablet-with) {
+  //  margin: auto;
+  //  padding: inherit;
+  //}
 
   &:nth-child(2) {
     position: relative;
@@ -175,10 +216,10 @@
 
 .form__radio-label {
   position: relative;
-  margin: 13px 0 13px 46px;
+  margin: 13px 0 13px 57px;
 
   &:nth-child(2) {
-    margin: 11px 0 11px 46px;
+    margin: 11px 0 11px 57px;
   }
 
   &:hover::before {
@@ -194,45 +235,113 @@
   line-height: 26px;
   color: #000000;
   text-transform: none;
-  position: relative;
-  width: 70%;
+  //width: 70%;
   background: #ffffff;
-  padding: 0 0 35px 0;
+  //padding: 0 0 35px 0;
+  box-sizing: border-box;
+  display: inline;
+  padding: 0 40px;
+
+  @media (max-width: 767px) {
+    background: transparent;
+    padding: 0 20px 0 0;
+  }
 
   @media (min-width: $tablet-with) {
     font-size: 36px;
     line-height: 36px;
-    width: 83%;
-    padding: 25px 0 77px 0;
   }
 
+  @media (min-width: $desktop-with) {
+    margin-left: -40px;
+  }
+}
+
+.form__title-box {
+  position: relative;
+  width: 100%;
+  padding: 16px 0 48px 30px;
+  margin: 28px 0;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-with) {
+    padding: 16px 0 17px 110px;
+    margin: 53px auto 53px auto;
+    position: static;
+    max-width: 1440px;
+  }
+}
+
+.form__title-checkbox,
+.form__title-comment,
+.form__title-contact {
   &::after {
     content: "";
-    width: 299px;
     left: 0;
-    top: 13px;
+    right: 0;
+    top: 25%;
     height: 2px;
-    background: $basic-green;
+    background: #68b738;
     position: absolute;
     z-index: -1;
 
-    @media (min-width: $tablet-with) {
-      width: 28%;
-      top: 47px;
-      right: -177px;
+    @media (max-width: 767px) {
+      width: 49%;
       left: auto;
+      top: 33px;
     }
   }
 
-  &::before {
-    content: "";
-    width: 30px;
-    left: -70px;
-    top: 47px;
-    height: 2px;
-    background: $basic-green;
-    position: absolute;
-    z-index: -1;
+  @media (max-width: 767px) {
+    padding: 16px 20px 0 20px;
+    margin: 10px 0 32px;
+  }
+}
+
+.form__title-comment {
+  padding: 10px 20px 32px 20px;
+  margin: 0 auto;
+
+  &::after {
+    top: 25px;
+
+    @media (min-width: $tablet-with) {
+      top: 44.5%;
+    }
+  }
+
+  @media (min-width: $tablet-with) {
+    padding: 16px 0 48px 30px;
+    margin: 28px 0;
+  }
+
+  @media (min-width: $desktop-with) {
+    padding: 16px 0 17px 110px;
+    margin: 33px auto 56px auto;
+  }
+}
+
+.form__title-checkbox {
+  padding: 0 20px 0 20px;
+  margin: 3px 0 38px 0;
+
+  &::after {
+    @media (max-width: 767px) {
+      width: 43%;
+      top: 17px;
+    }
+
+    @media (min-width: $tablet-with) {
+      top: 21px;
+    }
+  }
+}
+
+.form__title-contact {
+  &::after {
+    @media (max-width: 767px) {
+      width: 31%;
+    }
   }
 }
 
@@ -254,6 +363,10 @@
       left: -50px;
       top: -2px;
     }
+
+    @media (min-width: $desktop-with) {
+      left: -60px;
+    }
   }
 }
 
@@ -272,6 +385,10 @@
     width: 16px;
     height: 16px;
     left: -38px;
+  }
+
+  @media (min-width: $desktop-with) {
+    left: -49px;
   }
 }
 
@@ -293,9 +410,16 @@
   width: 100%;
   min-height: 150px;
   border: 1px solid #e7e7e7;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 10px 15px 15px;
   box-sizing: border-box;
   margin-bottom: 22px;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
 
   &::placeholder {
     font-family: "Oswald", sans-serif;
@@ -312,14 +436,28 @@
   }
 
   @media (min-width: $tablet-with) {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
     min-height: 170px;
+    padding: 10px 20px 10px 20px;
   }
 }
 
 @media (min-width: $tablet-with) {
   .form__box-checkbox-title {
-    padding: 25px 0 50px 0;
+    padding-bottom: 10px;
+    margin-top: 28px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-with) {
+  .form__box-checkbox-title {
+    padding: 16px 0 17px 110px;
+    margin: 16px auto 28px auto;
+
+    &::after {
+      top: 74.5%;
+    }
   }
 }
 
@@ -434,6 +572,7 @@
 .form__box-star {
   text-align: center;
   padding: 1px 0 32px 0;
+  text-transform: none;
 
   @media (min-width: $tablet-with) {
     margin-left: 64px;
@@ -446,5 +585,13 @@
   @media (min-width: $desktop-with) {
     margin-left: 0;
     text-align: left;
+  }
+}
+
+@media (min-width: $desktop-with) {
+  .form__box-wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+    //box-sizing: border-box;
   }
 }
