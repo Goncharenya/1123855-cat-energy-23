@@ -29,6 +29,7 @@
   background-image: url("../img/mobile/cat_slim_mobile.svg");
   background-repeat: no-repeat;
   background-position: 22px 20px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-with) {
     background-image: url("../img/cat_slim.svg");
@@ -91,7 +92,7 @@
   text-transform: uppercase;
   color: #000000;
   text-align: center;
-  padding: 30px 0 0 0;
+  padding: 18px 0 0 0;
 
   @media (min-width: $tablet-with) {
     text-align: left;

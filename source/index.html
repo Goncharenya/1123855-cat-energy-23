@@ -5,6 +5,26 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicons/favicon152.svg" type="image/svg+xml">
+<!--  <link rel="apple-touch-icon" href="favicons/favicon152.svg">-->
+<!--  <link rel="manifest" href="manifest.webmanifest">-->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+  <link rel=" apple-touch-icon " sizes=" 72x72 " href="favicons/apple-icon-72x72.png">
+  <link rel=" apple-touch-icon " sizes="76x76" href="favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon " sizes=" 114x114 " href="favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+  <link rel=" apple-touch-icon " sizes=" 152x152 " href="favicons/apple-icon-152x152.png ">
+  <link rel=" apple-touch-icon " sizes="180x180" href="favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image / png" sizes="192x192" href="favicons/android-icon-192x192.png">
+  <link rel="icon" type="image / png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image / png" sizes="96x96" href="favicons/favicon-96x96.png">
+  <link rel="icon" type="image / png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel=" manifest " href="favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body class="body">
 <header class="header header-bg header-wrap">
@@ -133,11 +153,17 @@
         </div>
         <div class="example__item">
           <div class="example__image">
-            <img class="example__mobile-cat example__image--slim" src="img/mobile/after-mobile.png" width="251" height="240" alt="">
-            <img class="example__tablet-cat" src="img/tablet/image_cat_tablet.png" height="620" width="708" alt="">
-<!--          </div>-->
-<!--          <div class="example__image example__image&#45;&#45;pro">-->
-              <img class="example__before-image example__image--pro  example__visible-cat" src="img/mobile/before-mobile.png" height="232" width="280" alt="">
+
+            <picture>
+              <source media="(min-width: 1439px)" srcset="img/desktop/image_cat_desktop.png, img/desktop/image_cat_desktop@2x.png 2x">
+              <img class="example__mobile-cat example__image--slim" srcset="img/mobile/after-mobile@2x.png 2x" src="img/mobile/after-mobile.png" width="251" height="240" alt="тощий котяра">
+              <img class="example__mobile-cat example__image--slim" srcset="img/mobile/after-mobile@2x.png 2x" src="img/mobile/after-mobile.png" width="251" height="240" alt="тощий котяра">
+              <img class="example__tablet-cat" srcset="img/image_cat_tablet@2x.png 2x" src="img/tablet/image_cat_tablet.png" height="620" width="708" alt="половины тощего и толстого котяры">
+            </picture>
+
+<!--            <img class="example__mobile-cat example__image&#45;&#45;slim" srcset="img/mobile/after-mobile@2x.png 2x" src="img/mobile/after-mobile.png" width="251" height="240" alt="тощий котяра">-->
+<!--            <img class="example__tablet-cat" srcset="img/image_cat_tablet@2x.png 2x" src="img/tablet/image_cat_tablet.png" height="620" width="708" alt="половины тощего и толстого котяры">-->
+<!--            <img class="example__before-image example__image&#45;&#45;pro  example__visible-cat" srcset="img/mobile/before-mobile@2x.png 2x" src="img/mobile/before-mobile.png" height="232" width="280" alt="толстый котяра">-->
           </div>
           <div class="example__progress">
             <span class="example__before">Было</span>
@@ -218,5 +244,6 @@
 <!--    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «-->
 <!--      <a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».-->
 <!--    </p>-->
+<script src="js/main_menu.js"></script>
 </body>
 </html>

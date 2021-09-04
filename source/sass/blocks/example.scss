@@ -87,15 +87,23 @@
   }
 }
 
-.example__image img {
-  display: none;
-  text-align: center;
-  margin: 0 auto 20px auto;
-}
-
 .example__image {
+  overflow: hidden;
+
+  img {
+    display: none;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    width: 280px;
+    height: 240px;
+  }
+
   @media (min-width: $tablet-with) {
-    height: 552px;
+    min-height: 552px;
+  }
+
+  @media (min-width: $desktop-with) {
+    margin-top: -10rem;
   }
 }
 
@@ -103,14 +111,12 @@
   @media (min-width: $tablet-with) {
     display: block;
     margin-top: 42px;
+    width: 680px;
+    height: auto;
   }
 
   @media (min-width: $desktop-with) {
-    margin-top: -11.7rem;
-    margin-left: -3.4rem;
-    width: 708px;
-    height: 620px;
-    //display: block;
+    margin: 0 0 0 -2.4rem;
   }
 }
 
@@ -187,10 +193,11 @@
 
   @media (min-width: $tablet-with) {
     padding-bottom: 38px;
+    margin-top: -4rem;
   }
 
   @media (min-width: $desktop-with) {
-    margin-top: 20px;
+    margin-top: -6rem;
   }
 }
 

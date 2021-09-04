@@ -14,6 +14,12 @@
   margin-top: 25px;
   margin-bottom: 28px;
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/mobile/gift_bg_mobile@2x.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
   @media (min-width: $tablet-with) {
     background-size: cover;
     flex-flow: row;
