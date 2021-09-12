@@ -107,14 +107,14 @@
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/mobile/header_promo_slogan@2x.png");
-      background-size: 88%;
+      background-size: 280px;
     }
 
     @media (min-width: $tablet-with) {
       background-image: url("../img/tablet/index-can-tablet.png");
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 109%;
+      //background-size: 109%;
       width: 100%;
       min-height: 609px;
       padding-bottom: 20px;
@@ -124,6 +124,7 @@
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/tablet/promo_tablet@2x.png");
+        background-size: 708px;
       }
     }
 
