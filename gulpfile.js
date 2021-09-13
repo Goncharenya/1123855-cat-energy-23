@@ -120,7 +120,7 @@ const copyOther = (done) => {
     base: "source"
   })
     .pipe(gulp.dest('build'));
-   done();
+    done();
 }
 
 // const build = () => {
