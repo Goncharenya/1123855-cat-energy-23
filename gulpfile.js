@@ -10,7 +10,7 @@ const csso = require('postcss-csso');
 const rename = require('gulp-rename');
 const jsmin = require('gulp-terser');
 const del = require("del");
-const squoosh = require('gulp-libsquoosh');
+// const squoosh = require('gulp-libsquoosh');
 const webp = require('gulp-webp');
 const svgStore = require('gulp-svgstore');
 
@@ -56,7 +56,6 @@ const reload = (done) => {
   done();
 }
 
-
 // Watcher
 
 const watcher = () => {
@@ -77,8 +76,8 @@ const buildJs = () => {
   return gulp.src('source/js/*.js')
     .pipe(jsmin())
     .pipe(rename('scripts.min.js'))
-    .pipe(gulp.dest('build/js'))
-    .pipe(sync.stream());
+    .pipe(gulp.dest('build/js'));
+    // .pipe(sync.stream());
 }
 
 const clean = () => {
