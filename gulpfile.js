@@ -16,7 +16,6 @@ const webp = require('gulp-webp');
 const svgStore = require('gulp-svgstore');
 
 
-
 // Styles
 
 const styles = () => {
@@ -78,7 +77,7 @@ const buildJs = () => {
     .pipe(jsmin())
     .pipe(rename('scripts.min.js'))
     .pipe(gulp.dest('build/js'));
-    // .pipe(sync.stream());
+  // .pipe(sync.stream());
 }
 
 const clean = () => {
@@ -88,10 +87,11 @@ const clean = () => {
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(imagemin([
-      imagemin.mozjpeg({ progressive: true }),
-      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.mozjpeg({progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo()
     ]))
+    .pipe(gulp.dest("build/img"))
 }
 
 const copyImages = () => {
@@ -124,23 +124,8 @@ const copyOther = (done) => {
     base: "source"
   })
     .pipe(gulp.dest('build'));
-    done();
+  done();
 }
-
-// const build = () => {
-//   buildHtml();
-//   styles();
-//   buildJs();
-//   copyImages();
-//   optimizeImages();
-//   createWebp();
-//   createSprite();
-//   copyOther();
-//
-//   return new Promise(function(resolve, reject) {
-//     resolve();
-//   });
-// }
 
 const build = gulp.series(
   clean,
@@ -156,6 +141,7 @@ const build = gulp.series(
 );
 
 exports.build = build;
+
 // exports.build = gulp.series(
 //   build
 // );
@@ -176,7 +162,6 @@ exports.default = gulp.series(
     watcher
   ));
 
-
 exports.build = gulp.series(
   clean,
   copyOther,
@@ -187,4 +172,5 @@ exports.build = gulp.series(
     buildJs,
     createSprite,
     createWebp
-  ));
+  )
+);

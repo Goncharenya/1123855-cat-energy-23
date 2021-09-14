@@ -33,7 +33,7 @@
   @media (min-width: $desktop-with) {
     position: absolute;
     right: 0;
-    top: -78px
+    top: -78px;
   }
 }
 
@@ -49,12 +49,8 @@
 
   @media (min-width: $desktop-with) {
     flex-flow: row;
-    background-image: linear-gradient(#fff 85px, #f2f2f2 85px);
+    background-image: linear-gradient(#ffffff 85px, #f2f2f2 85px);
     min-height: 544px;
-
-    .example__item {
-      //width: 50%;
-    }
   }
 }
 
@@ -73,13 +69,11 @@
     padding-top: 0;
     margin: 43px auto 57px auto;
     padding-left: 30px;
-
   }
 
   @media (min-width: $desktop-with) {
     margin: 20px auto 0 auto;
     max-width: 1220px;
-
   }
 }
 
@@ -90,6 +84,7 @@
     font-size: 16px;
     line-height: 24px;
   }
+
   @media (min-width: $desktop-with) {
     width: 50%;
   }
@@ -131,6 +126,7 @@
     width: 50%;
   }
 }
+
 .example__item-desck {
   @media (min-width: $desktop-with) {
     box-sizing: border-box;
@@ -158,7 +154,7 @@
 
     .example__box {
       position: absolute;
-      background-image: linear-gradient(#fff 161px, #f2f2f2 161px);
+      background-image: linear-gradient(#ffffff 161px, #f2f2f2 161px);
       top: 16px;
       left: 0;
 
@@ -210,17 +206,20 @@
     margin-top: -3rem;
     //background-image: linear-gradient(#fff 218px,#f2f2f2 218px);
   }
+
   .example__before-box {
     width: 60%;
+
     @media (min-width: $desktop-with) {
-      background-image: linear-gradient(#fff 195px,#f2f2f2 195px);
+      background-image: linear-gradient(#ffffff 195px, #f2f2f2 195px);
       height: 654px;
     }
   }
+
   .example__after-box {
     @media (min-width: $desktop-with) {
       position: relative;
-      background-image: linear-gradient(#fff 195px,#eaeaea 195px);
+      background-image: linear-gradient(#ffffff 195px, #eaeaea 195px);
       right: -30px;
       height: 654px;
     }
