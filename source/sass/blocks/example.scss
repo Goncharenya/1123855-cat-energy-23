@@ -219,6 +219,7 @@
   }
   .example__after-box {
     @media (min-width: $desktop-with) {
+      position: relative;
       background-image: linear-gradient(#fff 195px,#eaeaea 195px);
       right: -30px;
       height: 654px;
@@ -342,9 +343,10 @@
 
   @media (min-width: $desktop-with) {
     position: absolute;
-    margin-top: 20px;
+    bottom: 20px;
     padding-bottom: 30px;
-    left: 37px;
+    left: -13px;
+    width: 100%;
     z-index: 100;
   }
 }
