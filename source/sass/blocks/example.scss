@@ -22,8 +22,12 @@
 .example-box__item {
   display: flex;
   flex-flow: column;
-  padding-bottom: 17px;
+  padding-bottom: 22px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-with) {
+    padding-bottom: 16px;
+  }
 
   @media (min-width: $desktop-with) {
     flex-flow: row;
@@ -37,18 +41,17 @@
 .example__title {
   text-transform: none;
   text-align: left;
-  padding-top: 28px;
-  margin-bottom: 19px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-with) {
     font-size: 60px;
     line-height: 60px;
     padding-top: 0;
-    margin: 43px 0 54px 0;
+    margin: 43px 0 68px 0;
   }
 
   @media (min-width: $desktop-with) {
-    margin: 20px 0 54px 0;
+    margin: 20px 0 9.6rem 0;
   }
 }
 
@@ -58,6 +61,17 @@
   @media (min-width: $tablet-with) {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .example__title-desk {
+    @media (min-width: $tablet-with) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $desktop-with) {
+      width: 72%;
+      margin-bottom: 60px;
+    }
   }
 }
 
@@ -86,9 +100,68 @@
     width: 50%;
   }
 }
+//cats ver
+@media (min-width: $tablet-with) {
+  .example__item-desck {
+    min-height: 366px;
+  }
+
+  .example__image {
+    overflow: hidden;
+    position: relative;
+    margin-top: 3rem;
+
+    @media (min-width: $desktop-with) {
+      overflow: visible
+    }
+
+    .example__box {
+      position: absolute;
+      background-image: linear-gradient(#fff 161px, #f2f2f2 161px);
+      top: 16px;
+      left: 0;
+
+      @media (min-width: $desktop-with) {
+        background-image: linear-gradient(#fff 175px, #f2f2f2 175px);
+      }
+    }
+
+    .example__before-box {
+      z-index: 20;
+      overflow: hidden;
+      left: 16px;
+
+      @media (min-width: $desktop-with) {
+        left: -40px;
+        width: 50%;
+      }
+    }
+
+    .example__after-box {
+      right: -48px;
+    }
+
+    .example__before-cat {
+      display: block;
+      width: 677px;
+      height: 518px;
+    }
+
+    .example__after-cat {
+      display: block;
+      width: 545px;
+      height: 520px;
+    }
+  }
+}
 
 .example__image {
-  overflow: hidden;
+  @media (min-width: $desktop-with) {
+    margin-top: -3rem;
+  }
+  .body .example__before-box {
+    width: 60%;
+  }
 
   img {
     display: none;
@@ -101,11 +174,20 @@
   @media (min-width: $tablet-with) {
     min-height: 552px;
   }
+}
 
-  @media (min-width: $desktop-with) {
-    margin-top: -10rem;
+@media (min-width: $desktop-with) {
+  .example__before-box::after {
+    content: "";
+    background: #eaeaea;
+    width: 50vw;
+    height: 40px;
+    display: block;
+    position: absolute;
   }
 }
+
+//cats ver
 
 .example__image .example__tablet-cat {
   @media (min-width: $tablet-with) {
@@ -169,6 +251,7 @@
   text-transform: uppercase;
   color: #000000;
   cursor: pointer;
+  border-bottom: 1px solid transparent;
 
   &:hover {
     border-bottom: 1px solid $special-dark-grey;
@@ -193,11 +276,12 @@
 
   @media (min-width: $tablet-with) {
     padding-bottom: 38px;
-    margin-top: -4rem;
   }
 
   @media (min-width: $desktop-with) {
-    margin-top: -6rem;
+    margin-top: 1.5rem;
+    padding-bottom: 30px;
+    margin-left: 40px;
   }
 }
 
@@ -209,7 +293,7 @@
   box-sizing: border-box;
   border-radius: 6px;
   background: #ffffff;
-  margin: 0 13px;
+  margin: 0 20px;
 
   @media (min-width: $tablet-with) {
     background: #cdcdcd;
@@ -220,7 +304,8 @@
   }
 
   @media (min-width: $desktop-with) {
-    width: 71%;
+    width: 74%;
+    margin: 0 30px;
   }
 }
 

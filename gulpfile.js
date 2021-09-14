@@ -11,6 +11,7 @@ const rename = require('gulp-rename');
 const jsmin = require('gulp-terser');
 const del = require("del");
 // const squoosh = require('gulp-libsquoosh');
+const imagemin = require("gulp-imagemin");
 const webp = require('gulp-webp');
 const svgStore = require('gulp-svgstore');
 
@@ -34,6 +35,12 @@ const styles = () => {
 }
 
 exports.styles = styles;
+
+const buildHtml = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('build'));
+}
 
 // Server
 
@@ -59,18 +66,12 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/*.html", gulp.series(buildHtml, reload));
   gulp.watch("source/js/script.js", gulp.series(buildJs));
 }
 
 // build tasks
-
-const buildHtml = () => {
-  return gulp.src('source/*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('build'));
-}
 
 const buildJs = () => {
   return gulp.src('source/js/*.js')
@@ -85,9 +86,12 @@ const clean = () => {
 };
 
 const optimizeImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png,svg}')
-    .pipe(squoosh())
-    .pipe(gulp.dest('build/img'));
+  return gulp.src('source/img/**/*.{jpg,png}')
+    .pipe(imagemin([
+      imagemin.mozjpeg({ progressive: true }),
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.svgo()
+    ]))
 }
 
 const copyImages = () => {
@@ -170,4 +174,17 @@ exports.default = gulp.series(
   gulp.series(
     server,
     watcher
+  ));
+
+
+exports.build = gulp.series(
+  clean,
+  copyOther,
+  optimizeImages,
+  gulp.parallel(
+    styles,
+    buildHtml,
+    buildJs,
+    createSprite,
+    createWebp
   ));
