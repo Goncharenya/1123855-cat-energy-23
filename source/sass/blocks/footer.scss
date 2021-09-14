@@ -6,6 +6,8 @@
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
+  margin-left: -20px;
+  margin-right: -20px;
 
   @media (min-width: $tablet-with) {
     padding: 38px 70px;
