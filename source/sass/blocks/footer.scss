@@ -11,14 +11,17 @@
 
   @media (min-width: $tablet-with) {
     padding: 38px 70px;
+    margin-left: -28px;
+    margin-right: -28px;
   }
 
   @media (min-width: $desktop-with) {
     position: absolute;
     background: #ffffff;
     padding: 44px 72px 44px 75px;
-    //left: 110px;
-    margin-top: 95px;
+    top: 94px;
+    //margin-top: 87px;
+    left: 2%;
     width: 570px;
     min-height: 201px;
     box-sizing: border-box;
@@ -98,9 +101,11 @@
 
   .footer__iframe {
     height: 362px;
+    width: 100%;
 
     @media (min-width: $tablet-with) {
       height: 400px;
+      width: 100%;
     }
   }
 }
@@ -143,7 +148,11 @@
   @media (min-width: $tablet-with) {
     flex-flow: row;
     align-items: center;
-    padding-top: 34px;
+    padding-top: 28px;
+  }
+
+  @media (min-width: $desktop-with) {
+    padding-top: 20px;
   }
 }
 

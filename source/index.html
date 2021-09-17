@@ -8,18 +8,18 @@
   <link rel="icon" href="favicons/favicon152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
-  <link rel=" apple-touch-icon " sizes=" 72x72 " href="favicons/apple-icon-72x72.png">
-  <link rel=" apple-touch-icon " sizes="76x76" href="favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon " sizes=" 114x114 " href="favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
   <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
   <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
-  <link rel=" apple-touch-icon " sizes=" 152x152 " href="favicons/apple-icon-152x152.png ">
-  <link rel=" apple-touch-icon " sizes="180x180" href="favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image / png" sizes="192x192" href="favicons/android-icon-192x192.png">
-  <link rel="icon" type="image / png" sizes="32x32" href="favicons/favicon-32x32.png">
-  <link rel="icon" type="image / png" sizes="96x96" href="favicons/favicon-96x96.png">
-  <link rel="icon" type="image / png" sizes="16x16" href="favicons/favicon-16x16.png">
-  <link rel=" manifest " href="favicons/manifest.json">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png ">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
@@ -38,12 +38,12 @@
         <img class="logo__mobile-text" src="img/cat_energy.svg" alt="cat energy" width="101" height="18">
       </a>
     </div>
-    <nav class="header__nav nav">
-      <button class="nav__burger-open">
+    <nav class="header__nav nav menu">
+      <button class="nav__burger-open menu__close">
         <span class="nav__burger-line"></span>
       </button>
       <!--      Это крестик бургер-менюшки в перспективе :)-->
-      <ul class="nav__list nav__list-main">
+      <ul class="nav__list nav__list-main menu__open">
         <li class="nav__item nav__link-main"><a class="nav__link nav__link--active link-classic" href="index.html">Главная</a>
         </li>
         <li class="nav__item"><a class="nav__link nav__link-main link-classic" href="catalog.html">Каталог продукции</a>
@@ -124,7 +124,7 @@
 
 <!--      example-->
   <section class="example-box">
-    <h2 class="example__title title-section">Живой пример</h2>
+    <h2 class="example-box__title title-section">Живой пример</h2>
     <div class="example">
       <div class="example-box__item">
         <div class="example__item example__item-desck">
@@ -155,15 +155,9 @@
         </div>
         <div class="example__item example__item-cats">
           <div class="example__image">
-            <!--            <picture>-->
-            <!--              <source media="(min-width: 1439px)" srcset="img/desktop/image_cat_desktop.png, img/desktop/image_cat_desktop@2x.png 2x">-->
-            <!--              <source type="image/webp" media="(min-width: 1439px)" srcset="img/desktop/image_cat_desktop.webp, img/desktop/image_cat_desktop_2x.webp 2x">-->
-<!--                          <img class="example__mobile-cat example__image--slim" srcset="img/mobile/after-mobile@2x.png 2x" src="img/mobile/after-mobile.png" width="251" height="240" alt="тощий котяра">-->
-<!--                          <img class="example__before-image example__image--pro  example__visible-cat" srcset="img/mobile/before-mobile@2x.png 2x" src="img/mobile/before-mobile.png" height="232" width="280" alt="толстый котяра">-->
-            <!--            </picture>-->
             <div class="example__before-box example__box"  style="width: 52%">
-              <img class="example__mobile-cat example__image--slim" srcset="img/mobile/after-mobile@2x.png 2x" src="img/mobile/after-mobile.png" width="251" height="240" alt="тощий котяра">
-              <img class="example__before-image example__image--pro  example__visible-cat" srcset="img/mobile/before-mobile@2x.png 2x" src="img/mobile/before-mobile.png" height="232" width="280" alt="толстый котяра">
+              <img class="example__mobile-cat example__image-slim" srcset="img/mobile/after-mobile@2x.png 2x" src="img/mobile/after-mobile.png" width="251" height="240" alt="тощий котяра">
+              <img class="example__before-image example__image-pro  example__visible-cat" srcset="img/mobile/before-mobile@2x.png 2x" src="img/mobile/before-mobile.png" height="232" width="280" alt="толстый котяра">
               <img class="example__before-cat example__img-cat" src="img/cat/before.png" alt="" width="677" height="520">
             </div>
             <div class="example__after-box example__box">
@@ -200,9 +194,7 @@
     </div>
   </div>
   <div class="footer__item footer__item-map">
-    <iframe class="footer__iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586849!2d30.320853352161127!3d59.93871648178725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627064731523!5m2!1sru!2sru"
-            width="100%" height="362" style="border:0;" allowfullscreen="" loading="lazy">
+    <iframe class="footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586849!2d30.320853352161127!3d59.93871648178725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627064731523!5m2!1sru!2sru" height="362" style="border:0;" allowfullscreen="">
     </iframe>
   </div>
   <div class="footer__item social">
@@ -248,9 +240,6 @@
     </div>
   </div>
 </footer>
-<!--    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «-->
-<!--      <a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».-->
-<!--    </p>-->
 <script src="js/scripts.min.js"></script>
 </body>
 </html>

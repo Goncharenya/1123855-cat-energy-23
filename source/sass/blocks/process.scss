@@ -6,20 +6,18 @@
   @media (min-width: $tablet-with) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-column-gap: 50px;
-    grid-row-gap: 116px;
+    grid-column-gap: 57px;
+    grid-row-gap: 119px;
     padding-bottom: 84px;
-
-    //flex-flow: row;
-    //flex-wrap: wrap;
     border-bottom: 2px solid $basic-grey;
     //justify-content: flex-start;
   }
 
   @media (min-width: $desktop-with) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 70px;
+    grid-column-gap: 72px;
     border-bottom: none;
+    padding-bottom: 76px;
   }
 }
 

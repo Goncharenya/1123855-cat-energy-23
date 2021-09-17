@@ -18,11 +18,11 @@ textarea {
   flex-flow: row-reverse;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   width: 100%;
 
   @media (min-width: $tablet-with) {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-with) {
@@ -61,13 +61,21 @@ textarea {
 .form__email {
   background-image: url("../img/icon/icon_mail.svg");
   background-repeat: no-repeat;
-  background-position: 97% center;
+  background-position: 92% center;
+
+  @media (min-width: $desktop-with) {
+    background-position: 97% center;
+  }
 }
 
 .form__phone {
   background-image: url("../img/icon/icon_phone.svg");
   background-repeat: no-repeat;
-  background-position: 97% center;
+  background-position: 92% center;
+
+  @media (min-width: $desktop-with) {
+    background-position: 97% center;
+  }
 }
 
 .form__item-user-email {
@@ -88,7 +96,7 @@ textarea {
 
 .form__item-input {
   border: 1px solid #e7e7e7;
-  padding: 13px;
+  padding: 4px 13px 10px 10px;
   width: 100%;
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -154,7 +162,7 @@ textarea {
 
   &:nth-child(2) {
     position: relative;
-    margin-top: 25px;
+    margin-top: 22px;
     margin-bottom: 13px;
 
     @media (min-width: $desktop-with) {
@@ -216,10 +224,26 @@ textarea {
 
 .form__radio-label {
   position: relative;
-  margin: 13px 0 13px 57px;
+  margin: 13px 0 13px 46px;
+
+  @media (min-width: $tablet-with) {
+    margin: 13px 0 13px 56px;
+  }
+
+  @media (min-width: $desktop-with) {
+    margin: 13px 0 13px 54px;
+  }
 
   &:nth-child(2) {
-    margin: 11px 0 11px 57px;
+    margin: 11px 0 11px 46px;
+
+    @media (min-width: $tablet-with) {
+      margin: 13px 0 13px 56px;
+    }
+
+    @media (min-width: $desktop-with) {
+      margin: 13px 0 13px 54px;
+    }
   }
 
   &:hover::before {
@@ -264,6 +288,10 @@ textarea {
   margin: 28px 0;
   box-sizing: border-box;
 
+  @media (min-width: $tablet-with) {
+    margin: 35px 0 28px 0;
+  }
+
   @media (min-width: $desktop-with) {
     padding: 16px 0 17px 110px;
     margin: 53px auto 53px auto;
@@ -279,7 +307,7 @@ textarea {
     content: "";
     left: 0;
     right: 0;
-    top: 25%;
+    top: 24.5%;
     height: 2px;
     background: #68b738;
     position: absolute;
@@ -293,7 +321,7 @@ textarea {
   }
 
   @media (max-width: 767px) {
-    padding: 16px 20px 0 20px;
+    padding: 13px 20px 0 20px;
     margin: 10px 0 32px;
   }
 }
@@ -306,7 +334,11 @@ textarea {
     top: 25px;
 
     @media (min-width: $tablet-with) {
-      top: 44.5%;
+      top: 36.5%;
+    }
+
+    @media (min-width: $desktop-with) {
+      top: 44.2%;
     }
   }
 
@@ -342,6 +374,10 @@ textarea {
     @media (max-width: 767px) {
       width: 31%;
     }
+
+    @media (min-width: $tablet-with) {
+      top: 39%;
+    }
   }
 }
 
@@ -360,7 +396,7 @@ textarea {
     @media (min-width: $tablet-with) {
       width: 36px;
       height: 36px;
-      left: -50px;
+      left: -60px;
       top: -2px;
     }
 
@@ -384,7 +420,7 @@ textarea {
     top: 9px;
     width: 16px;
     height: 16px;
-    left: -38px;
+    left: -48px;
   }
 
   @media (min-width: $desktop-with) {
@@ -395,7 +431,7 @@ textarea {
 .form .form__radio {
   @media (min-width: $tablet-with) {
     border: 1px solid #e7e7e7;
-    padding: 16px 32px;
+    padding: 10px 32px;
     margin: 51px 0 24px 0;
 
     @media (min-width: $desktop-with) {
@@ -511,11 +547,12 @@ textarea {
   @media (min-width: $desktop-with) {
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
+    grid-column-gap: 83px;
   }
 }
 
 .additional-product__item {
-  padding: 25px 0 0 50px;
+  padding: 25px 0 0 46px;
   position: relative;
   align-items: center;
   display: flex;
@@ -530,7 +567,7 @@ textarea {
 }
 
 .additional-product__item-first {
-  padding: 0 0 0 50px;
+  padding: 0 0 0 46px;
 
   @media (min-width: $tablet-with) {
     padding: 12px 0 29px 59px;
@@ -547,20 +584,23 @@ textarea {
   @media (min-width: $desktop-with) {
     display: grid;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 7px;
+    margin-bottom: 62px;
   }
 }
 
 .form__button {
   border: none;
   outline: none;
-  margin: 43px 0 20px 0;
+  margin: 40px 0 20px 0;
   width: 280px;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: $tablet-with) {
     font-size: 20px;
     line-height: 0;
-    margin: 33px 0 20px 0;
+    margin: 30px 0 20px 0;
     padding: 25px;
   }
 

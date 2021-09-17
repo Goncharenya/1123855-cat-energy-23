@@ -83,18 +83,6 @@
   //}
 }
 
-.menu_open {
-  display: flex;
-}
-
-.menu_close {
-  background: url("../img/mobile/menu_close.svg") no-repeat;
-  background-position-y: bottom;
-
-  .nav__burger-line {
-    opacity: 0;
-  }
-}
 
 .nav__item {
   width: 100%;
