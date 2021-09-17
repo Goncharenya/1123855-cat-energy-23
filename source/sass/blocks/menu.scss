@@ -1,0 +1,16 @@
+.menu__open {
+  display: flex;
+}
+
+.menu__close {
+  background: url("../img/mobile/menu_close.svg") no-repeat;
+  background-position-y: bottom;
+
+  .nav__burger-line {
+    opacity: 0;
+  }
+}
+
+.menu__hidden {
+  display: none;
+}

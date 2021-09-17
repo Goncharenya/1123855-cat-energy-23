@@ -35,10 +35,11 @@
     font-size: 20px;
     line-height: 30px;
     margin: 54px 0 62px 0;
+    padding-left: 70px;
   }
 
   @media (min-width: $desktop-with) {
-    margin: 54px auto 62px auto;
+    margin: 54px auto 65px auto;
     max-width: 1440px;
     box-sizing: border-box;
   }
