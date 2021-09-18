@@ -3,7 +3,8 @@ let navList = document.querySelector('.nav__list'),
     navBurgerOpen = document.querySelector('.nav__burger-open'),
     nav = document.querySelector('.nav');
 
-navList.classList.add("menu__hidden");
+navList.classList.remove("menu__open");
+navBurgerOpen.classList.remove("menu__hidden");
 
 nav.addEventListener("click", function () {
   // if(navList !== null){

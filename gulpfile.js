@@ -80,6 +80,8 @@ const buildJs = () => {
   // .pipe(sync.stream());
 }
 
+exports.buildJs = buildJs;
+
 const clean = () => {
   return del("build");
 };
